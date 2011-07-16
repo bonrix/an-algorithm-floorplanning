@@ -1,0 +1,157 @@
+File= ami49, ModuleCount= 49, Width= 7.5740,  Height= 5.6980,  Area= 43.1567, Total Area= 35.4454,  Dead=17.8680 
+File= ami33, ModuleCount= 49, Width= 1.6100,  Height= 0.8750,  Area= 1.4087,   Total Area= 1.1564,     Dead=17.9096 
+File= xerox, ModuleCount= 49, Width= 2.6670,   Height= 7.7140,  Area= 20.5732, Total Area= 19.3503,  Dead=5.9443 
+File= hp,     ModuleCount= 49, Width= 2.2680,    Height= 4.1160,  Area= 9.3351,   Total Area= 8.8306,    Dead=5.4044 
+File= apte,  ModuleCount= 49, Width= 25.6140,  Height= 1.8320,  Area= 46.9248, Total Area= 46.5616,  Dead=0.7740 
+File= ..\..\testcase\circuit\apte, Width= 12.9500, Height= 3.6640, Area= 47.4488,Total Area= 46.5616, Dead=1.8697 
+File= ..\..\testcase\circuit\xerox, Width= 11.7110, Height= 2.5410, Area= 29.7577,Total Area= 19.3503, Dead=34.9737 
+File= ..\..\testcase\circuit\hp, Width= 2.5200, Height= 3.9340, Area= 9.9137,Total Area= 8.8306, Dead=10.9253 
+File= ..\..\testcase\circuit\ami33, Width= 2.3940, Height= 0.5880, Area= 1.4077,Total Area= 1.1564, Dead=17.8467 
+File= ..\..\testcase\circuit\ami49, Width= 5.4180, Height= 8.1900, Area= 44.3734,Total Area= 35.4454, Dead=20.1201 
+File= ..\..\testcase\circuit\ami49, Width= 10.4720, Height= 3.8220, Area= 40.0240,Total Area= 35.4454, Dead=11.4395 
+File= ..\..\testcase\circuit\ami33, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\hp, Width= 2.2680, Height= 4.1160, Area= 9.3351,Total Area= 8.8306, Dead=5.4044 
+File= ..\..\testcase\circuit\xerox, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443 
+File= ..\..\testcase\circuit\apte, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740 
+File= ..\..\testcase\circuit\ami33, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\xerox.soft, Width= 3.7330, Height= 5.4000, Area= 20.1582,Total Area= 19.3503, Dead=4.0078 
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.8570, Height= 2.4380, Area= 21.5934,Total Area= 19.3503, Dead=10.3878 
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040 
+File= ..\..\testcase\circuit\apte.soft, Width= 12.3420, Height= 3.9850, Area= 49.1829,Total Area= 46.5616, Dead=5.3296 
+File= ..\..\testcase\circuit\apte.soft, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740 
+File= ..\..\testcase\circuit\apte.soft, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740 
+File= ..\..\testcase\circuit\apte.soft, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740 
+File= ..\..\testcase\circuit\xerox.soft, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443 
+File= ..\..\testcase\circuit\hp.soft, Width= 2.2680, Height= 4.1160, Area= 9.3351,Total Area= 8.8306, Dead=5.4044 
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040 
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040 
+File= ..\..\testcase\circuit\xerox.soft, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443 
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.8570, Height= 2.4380, Area= 21.5934,Total Area= 19.3503, Dead=10.3878 
+File= ..\..\testcase\circuit\apte.soft, Width= 12.3420, Height= 3.9850, Area= 49.1829,Total Area= 46.5616, Dead=5.3296 
+File= ..\..\testcase\circuit\ami33.soft, Width= 0.9730, Height= 1.3830, Area= 1.3457,Total Area= 1.1564, Dead=14.0608 
+File= ..\..\testcase\circuit\ami49.soft, Width= 4.7580, Height= 9.2630, Area= 44.0734,Total Area= 35.4454, Dead=19.5763 
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.7980, Height= 4.1190, Area= 40.3580,Total Area= 35.4454, Dead=12.1724 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.5050, Height= 1.0030, Area= 1.5095,Total Area= 1.1564, Dead=23.3894 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami33, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami49, Width= 10.4720, Height= 3.8220, Area= 40.0240,Total Area= 35.4454, Dead=11.4395 
+File= ..\..\testcase\circuit\ami49, Width= 10.4720, Height= 3.8220, Area= 40.0240,Total Area= 35.4454, Dead=11.4395 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039 
+File= ..\..\testcase\circuit\ami49, Width= 10.4720, Height= 3.8220, Area= 40.0240,Total Area= 35.4454, Dead=11.4395, Time=0 
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039, Time=9  
+File= ..\..\testcase\circuit\ami49, Width= 10.4720, Height= 3.8220, Area= 40.0240,Total Area= 35.4454, Dead=11.4395, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= 1.8410, Height= 0.7000, Area= 1.2887,Total Area= 1.1564, Dead=10.2624, Time=0 
+File= ..\..\testcase\circuit\hp, Width= 2.2680, Height= 4.1160, Area= 9.3351,Total Area= 8.8306, Dead=5.4044, Time=0 
+File= ..\..\testcase\circuit\xerox, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443, Time=0 
+File= ..\..\testcase\circuit\xerox, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443, Time=0 
+File= ..\..\testcase\circuit\apte, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740, Time=0 
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.7980, Height= 4.1190, Area= 40.3580,Total Area= 35.4454, Dead=12.1724, Time=11  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.7980, Height= 4.1190, Area= 40.3580,Total Area= 35.4454, Dead=12.1724, Time=10  
+File= ..\..\testcase\circuit\ami33.soft, Width= 0.9140, Height= 1.5030, Area= 1.3737,Total Area= 1.1564, Dead=15.8176, Time=36  
+File= ..\..\testcase\circuit\hp.soft, Width= 5.8330, Height= 1.6090, Area= 9.3853,Total Area= 8.8306, Dead=5.9104, Time=2  
+File= ..\..\testcase\circuit\xerox.soft, Width= 9.0030, Height= 2.4380, Area= 21.9493,Total Area= 19.3503, Dead=11.8410, Time=35  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.5230, Height= 9.7810, Area= 54.0205,Total Area= 46.5616, Dead=13.8074, Time=0  
+
+File= ..\..\testcase\circuit\ami49.soft, Width= 7.1010, Height= 5.6430, Area= 40.0709,Total Area= 35.4454, Dead=11.5433, Time=8  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039, Time=7  
+File= ..\..\testcase\circuit\hp.soft, Width= 10.4830, Height= 1.0080, Area= 10.5669,Total Area= 8.8306, Dead=16.4314, Time=31  
+File= ..\..\testcase\circuit\xerox.soft, Width= 3.2070, Height= 7.6440, Area= 24.5143,Total Area= 19.3503, Dead=21.0653, Time=2  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.3780, Height= 10.4530, Area= 56.2162,Total Area= 46.5616, Dead=17.1741, Time=2  
+File= ..\..\testcase\circuit\ami49.soft, Width= 4.7580, Height= 9.2630, Area= 44.0734,Total Area= 35.4454, Dead=19.5763, Time=365  
+File= ..\..\testcase\circuit\ami33.soft, Width= 0.9730, Height= 1.3830, Area= 1.3457,Total Area= 1.1564, Dead=14.0608, Time=243  
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040, Time=61  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.8570, Height= 2.4380, Area= 21.5934,Total Area= 19.3503, Dead=10.3878, Time=61  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.3420, Height= 3.9850, Area= 49.1829,Total Area= 46.5616, Dead=5.3296, Time=60  
+File= ..\..\testcase\circuit\apte, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= -842149.7300, Height= 2.3940, Area= -2016106.4536,Total Area= 1.1564, Dead=100.0001, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= -842147.7210, Height= 1.3230, Area= -1114161.4349,Total Area= 1.1564, Dead=100.0001, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= -842149.9330, Height= 0.7980, Area= -672035.6465,Total Area= 1.1564, Dead=100.0002, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= -1701143.9110, Height= 1717986.9160, Area= -2922542981331.0684,Total Area= 1.1564, Dead=100.0000, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= -842149.9330, Height= 0.7980, Area= -672035.6465,Total Area= 1.1564, Dead=100.0002, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= 1.9600, Height= 0.7560, Area= 1.4818,Total Area= 1.1564, Dead=21.9544, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= 3.5700, Height= 0.3920, Area= 1.3994,Total Area= 1.1564, Dead=17.3634, Time=0 
+File= ..\..\testcase\circuit\ami49, Width= 38.2200, Height= 1.7080, Area= 65.2798,Total Area= 35.4454, Dead=45.7023, Time=0 
+File= ..\..\testcase\circuit\ami49, Width= 5.1520, Height= 7.8400, Area= 40.3917,Total Area= 35.4454, Dead=12.2457, Time=0 
+File= ..\..\testcase\circuit\hp, Width= 3.2200, Height= 3.3040, Area= 10.6389,Total Area= 8.8306, Dead=16.9971, Time=0 
+File= ..\..\testcase\circuit\xerox, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443, Time=0 
+File= ..\..\testcase\circuit\apte, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740, Time=1 
+File= ..\..\testcase\circuit\ami33, Width= 1.9600, Height= 0.7560, Area= 1.4818,Total Area= 1.1564, Dead=21.9544, Time=0 
+File= ..\..\testcase\circuit\ami49, Width= 5.1520, Height= 7.8400, Area= 40.3917,Total Area= 35.4454, Dead=12.2457, Time=0 
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=62  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.1930, Height= 1.3010, Area= 1.5521,Total Area= 1.1564, Dead=25.4910, Time=218  
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.9700, Height= 4.1840, Area= 37.5305,Total Area= 35.4454, Dead=5.5556, Time=313  
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.9700, Height= 4.1840, Area= 37.5305,Total Area= 35.4454, Dead=5.5556, Time=313  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.3420, Height= 3.9850, Area= 49.1829,Total Area= 46.5616, Dead=5.3296, Time=62  
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.9700, Height= 4.1840, Area= 37.5305,Total Area= 35.4454, Dead=5.5556, Time=310  
+File= ..\..\testcase\circuit\apte.soft, Width= 25.6710, Height= 1.8320, Area= 47.0293,Total Area= 46.5616, Dead=0.9944, Time=62  
+File= ..\..\testcase\circuit\xerox.soft, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443, Time=33  
+File= ..\..\testcase\circuit\hp.soft, Width= 2.5200, Height= 5.2280, Area= 13.1746,Total Area= 8.8306, Dead=32.9725, Time=35  
+File= ..\..\testcase\circuit\hp.soft, Width= 4.0700, Height= 2.2980, Area= 9.3529,Total Area= 8.8306, Dead=5.5841, Time=64  
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040, Time=62  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=62  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.1090, Height= 2.4470, Area= 19.8427,Total Area= 19.3503, Dead=2.4817, Time=63  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.1090, Height= 2.4470, Area= 19.8427,Total Area= 19.3503, Dead=2.4817, Time=62  
+File= ..\..\testcase\circuit\xerox.soft, Width= 858993.4560, Height= 858993.9460, Area= 737870178357.6174,Total Area= 19.3503, Dead=100.0000, Time=6  
+File= ..\..\testcase\circuit\xerox.soft, Width= 858993.9460, Height= 858993.4560, Area= 737870178357.6174,Total Area= 19.3503, Dead=100.0000, Time=33  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.8570, Height= 2.4380, Area= 21.5934,Total Area= 19.3503, Dead=10.3878, Time=62  
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040, Time=62  
+File= ..\..\testcase\circuit\ami33.soft, Width= -858992.3310, Height= 1.3770, Area= -1182832.4398,Total Area= 1.1564, Dead=100.0001, Time=247  
+File= ..\..\testcase\circuit\ami33.soft, Width= 0.9730, Height= 1.3830, Area= 1.3457,Total Area= 1.1564, Dead=14.0608, Time=248  
+File= ..\..\testcase\circuit\hp.soft, Width= 2.2980, Height= 0.3830, Area= 0.8801,Total Area= 8.8306, Dead=-903.3227, Time=62  
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040, Time=61  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8590, Height= 0.7300, Area= 1.3571,Total Area= 1.1564, Dead=14.7834, Time=251  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8590, Height= 0.7300, Area= 1.3571,Total Area= 1.1564, Dead=14.7834, Time=250  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.9360, Height= 3.9850, Area= 39.5950,Total Area= 35.4454, Dead=10.4800, Time=367  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=61  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8590, Height= 0.7300, Area= 1.3571,Total Area= 1.1564, Dead=14.7834, Time=245  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.9360, Height= 3.9850, Area= 39.5950,Total Area= 35.4454, Dead=10.4800, Time=367  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=120  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8590, Height= 0.7300, Area= 1.3571,Total Area= 1.1564, Dead=14.7834, Time=309  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.1930, Height= 1.3010, Area= 1.5521,Total Area= 1.1564, Dead=25.4910, Time=216  
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.9700, Height= 4.1840, Area= 37.5305,Total Area= 35.4454, Dead=5.5556, Time=312  
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.6890, Height= 4.1840, Area= 36.3548,Total Area= 35.4454, Dead=2.5013, Time=308  
+File= ..\..\testcase\circuit\ami49, Width= 5.1520, Height= 7.8400, Area= 40.3917,Total Area= 35.4454, Dead=12.2457, Time=0 
+File= ..\..\testcase\circuit\ami33, Width= 1.9600, Height= 0.7560, Area= 1.4818,Total Area= 1.1564, Dead=21.9544, Time=0 
+File= ..\..\testcase\circuit\hp, Width= 3.2200, Height= 3.3040, Area= 10.6389,Total Area= 8.8306, Dead=16.9971, Time=0 
+File= ..\..\testcase\circuit\xerox, Width= 2.6670, Height= 7.7140, Area= 20.5732,Total Area= 19.3503, Dead=5.9443, Time=0 
+File= ..\..\testcase\circuit\apte, Width= 25.6140, Height= 1.8320, Area= 46.9248,Total Area= 46.5616, Dead=0.7740, Time=0 
+File= ..\..\testcase\circuit\ami49.soft, Width= 8.9700, Height= 4.1840, Area= 37.5305,Total Area= 35.4454, Dead=5.5556, Time=312  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.1930, Height= 1.3010, Area= 1.5521,Total Area= 1.1564, Dead=25.4910, Time=216  
+File= ..\..\testcase\circuit\hp.soft, Width= 4.0700, Height= 2.2980, Area= 9.3529,Total Area= 8.8306, Dead=5.5841, Time=63  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.1090, Height= 2.4470, Area= 19.8427,Total Area= 19.3503, Dead=2.4817, Time=61  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=61  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.9360, Height= 3.9850, Area= 39.5950,Total Area= 35.4454, Dead=10.4800, Time=367  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8590, Height= 0.7300, Area= 1.3571,Total Area= 1.1564, Dead=14.7834, Time=245  
+File= ..\..\testcase\circuit\hp.soft, Width= 3.4400, Height= 2.6520, Area= 9.1229,Total Area= 8.8306, Dead=3.2040, Time=61  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.8570, Height= 2.4380, Area= 21.5934,Total Area= 19.3503, Dead=10.3878, Time=62  
+File= ..\..\testcase\circuit\apte.soft, Width= 12.2180, Height= 3.9850, Area= 48.6887,Total Area= 46.5616, Dead=4.3688, Time=60  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.5230, Height= 9.7810, Area= 54.0205,Total Area= 46.5616, Dead=13.8074, Time=0  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.7980, Height= 4.1190, Area= 40.3580,Total Area= 35.4454, Dead=12.1724, Time=9  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.5030, Height= 0.9960, Area= 1.4970,Total Area= 1.1564, Dead=22.7483, Time=31  
+File= ..\..\testcase\circuit\hp.soft, Width= 5.8330, Height= 1.6090, Area= 9.3853,Total Area= 8.8306, Dead=5.9104, Time=2  
+File= ..\..\testcase\circuit\xerox.soft, Width= 9.0030, Height= 2.4380, Area= 21.9493,Total Area= 19.3503, Dead=11.8410, Time=31  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.5230, Height= 9.7810, Area= 54.0205,Total Area= 46.5616, Dead=13.8074, Time=0  
+File= ..\..\testcase\circuit\ami49.soft, Width= 9.4570, Height= 4.1160, Area= 38.9250,Total Area= 35.4454, Dead=8.9392, Time=8  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8120, Height= 0.7310, Area= 1.3246,Total Area= 1.1564, Dead=12.6926, Time=3  
+File= ..\..\testcase\circuit\hp.soft, Width= 4.5130, Height= 2.0440, Area= 9.2246,Total Area= 8.8306, Dead=4.2711, Time=3  
+File= ..\..\testcase\circuit\xerox.soft, Width= 8.3230, Height= 2.5340, Area= 21.0905,Total Area= 19.3503, Dead=8.2510, Time=30  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.5230, Height= 9.7810, Area= 54.0205,Total Area= 46.5616, Dead=13.8074, Time=1  
+File= ..\..\testcase\circuit\ami49.soft, Width= 10.6370, Height= 3.7150, Area= 39.5165,Total Area= 35.4454, Dead=10.3021, Time=9  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.8160, Height= 0.7320, Area= 1.3293,Total Area= 1.1564, Dead=13.0039, Time=6  
+File= ..\..\testcase\circuit\hp.soft, Width= 10.4830, Height= 1.0080, Area= 10.5669,Total Area= 8.8306, Dead=16.4314, Time=30  
+File= ..\..\testcase\circuit\xerox.soft, Width= 3.2070, Height= 7.6440, Area= 24.5143,Total Area= 19.3503, Dead=21.0653, Time=3  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.3780, Height= 10.4530, Area= 56.2162,Total Area= 46.5616, Dead=17.1741, Time=2  
+File= ..\..\testcase\circuit\ami49.soft, Width= 5.1320, Height= 7.6930, Area= 39.4805,Total Area= 35.4454, Dead=10.2204, Time=7  
+File= ..\..\testcase\circuit\ami33.soft, Width= 1.5030, Height= 0.9780, Area= 1.4699,Total Area= 1.1564, Dead=21.3265, Time=5  
+File= ..\..\testcase\circuit\hp.soft, Width= 2.3580, Height= 4.5300, Area= 10.6817,Total Area= 8.8306, Dead=17.3301, Time=31  
+File= ..\..\testcase\circuit\xerox.soft, Width= 2.8830, Height= 7.6440, Area= 22.0377,Total Area= 19.3503, Dead=12.1944, Time=2  
+File= ..\..\testcase\circuit\apte.soft, Width= 5.3780, Height= 10.4530, Area= 56.2162,Total Area= 46.5616, Dead=17.1741, Time=2  
