@@ -1,0 +1,25 @@
+#!/usr/local/bin/perl
+
+$file=$ARGV[0];
+$minarea = $ARGV[1];
+$line="";
+$time=1000000;
+
+
+open(RES,"< $file");
+
+while(<RES>){
+  @d = split(" ",  $_);
+  $area = $d[1];
+
+  if($area eq $minarea){
+    if ($time > $d[0]){
+      $time = $d[0];
+      $line = $_;
+    }
+    print $_;
+  }
+}
+
+print "\n\nMinimum: Area= $minarea, CPU= $time\n";
+print "$line\n";

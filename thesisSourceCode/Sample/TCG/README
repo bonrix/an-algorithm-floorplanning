@@ -1,0 +1,72 @@
+Instruction:
+       
+        TCG mode times #_of_hillclimb ratio
+
+        mode <a, w, s>:
+       
+              a: area optimization alone
+        
+              w: wirelength optimization alone
+
+              s: simulatenou area and wirelength 
+
+        times: 
+    
+             In each iteration, TCG runs 
+             
+             times X (number of modules) 
+
+             times
+
+
+       #_of_hillclimb:
+
+            Before apply simulate annealing algorithm,
+            
+            we first run hill climb algorithm  
+
+            #_of_hillclimb times. The temperature
+  
+            will keep in T=1.
+
+      ratio:
+
+           The parameter will significantly affect the 
+      
+           converge rate of TCG. If you set the value too small, 
+
+           the program will converge slowly. However, if
+
+           you set the value too large, the program may stop quickly
+
+           before reaching a good solution.
+
+
+    For example,
+
+         TCG  ami33 a 10 3 800  
+
+     
+Compile:
+
+     To compile the program, you need to have "LEDA package"
+
+     on the Sun Ultra workstation. The LEDA package is available
+
+     from http://www.mpi-sb.mpg.de/LEDA.
+    
+ 
+=================================================================   
+Note that in this program, the method to find reduction edges
+  
+is different from that written in our paper because this program
+
+is the old version. 
+
+=================================================================
+show.cc is used to show the graph from the output file.
+
+    For example,
+
+          show  *.out            
+               
