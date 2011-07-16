@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://ballade.cs.ucla.edu/~pubbench/partitioning/ -->
+<HTML><HEAD><TITLE>Partitioning benchmark suites</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3502.5390" name=GENERATOR></HEAD>
+<BODY>
+<H1>Partitioning Benchmark Suites</H1>
+<CENTER><FONT face="Times New Roman,Times">Project Director:&nbsp; <A 
+href="http://cadlab.cs.ucla.edu/~cong">Prof. Jason Cong</A></FONT></CENTER>
+<UL>
+  <CENTER><FONT face="Times New Roman,Times">Authors: <A 
+  href="http://cadlab.cs.ucla.edu/~michail">Michail Romesis</A>, <A 
+  href="http://cadlab.cs.ucla.edu/~xie">Min Xie</A></FONT></CENTER></UL>
+<CENTER><FONT face="Times New Roman,Times">Copyright© 2002-2003 the Regents of 
+University of California</FONT></CENTER><!------------------------------------------------------------->
+<HR>
+
+<H2>BEKU suite</H2>The BEKU examples [1] are hypergraph bipartitioning examples 
+with a known upper bound by construction developed at the UCLA VLSI CAD LAB. The 
+benchmarks match the average net distribution characteristics of the ISPD98[2] 
+benchmarks. The motivation behind these examples is to examine the performance 
+of state-of-the-art partitioning algorithms compared to our computed upper bound 
+and their scalability. The algorithms are the following: MLPart[3], hMetis[4], 
+and flare[5]. There are 8 examples with sizes ranging from 0.5M to 2M nodes. The 
+following table shows the characteristics of the examples, the cutsize upper 
+bound and the results from MLPart, hMetis and flare. <BR>&nbsp; <BR>&nbsp; 
+<TABLE border=1 cols=9 width="100%" NOSAVE>
+  <TBODY>
+  <TR>
+    <TD># nodes</TD>
+    <TD># nets</TD>
+    <TD>Upper bound</TD>
+    <TD>MLPart</TD>
+    <TD>MLPart / bound</TD>
+    <TD>hMetis</TD>
+    <TD>hMetis/bound</TD>
+    <TD>flare</TD>
+    <TD>flare/bound</TD></TR>
+  <TR>
+    <TD>500,000</TD>
+    <TD>530,705</TD>
+    <TD>92,343</TD>
+    <TD>92,350</TD>
+    <TD>1.00</TD>
+    <TD>92,348</TD>
+    <TD>1.00</TD>
+    <TD>92,430</TD>
+    <TD>1.00</TD></TR>
+  <TR>
+    <TD>500,000</TD>
+    <TD>530,705</TD>
+    <TD>111,873</TD>
+    <TD>111,965</TD>
+    <TD>1.00</TD>
+    <TD>139,810</TD>
+    <TD>1.25</TD>
+    <TD>142,662</TD>
+    <TD>1.28</TD></TR>
+  <TR>
+    <TD>1,000,000</TD>
+    <TD>1,061,410</TD>
+    <TD>184,714</TD>
+    <TD>184,755</TD>
+    <TD>1.00</TD>
+    <TD>184,700</TD>
+    <TD>1.00</TD>
+    <TD>184,926</TD>
+    <TD>1.00</TD></TR>
+  <TR>
+    <TD>1,000,000</TD>
+    <TD>1,061,410</TD>
+    <TD>223,520</TD>
+    <TD>223,796</TD>
+    <TD>1.00</TD>
+    <TD>280,167</TD>
+    <TD>1.25</TD>
+    <TD>285,901</TD>
+    <TD>1.28</TD></TR>
+  <TR>
+    <TD>1,500,000</TD>
+    <TD>1,592,114</TD>
+    <TD>276,670</TD>
+    <TD>276,698</TD>
+    <TD>1.00</TD>
+    <TD>276,635</TD>
+    <TD>1.00</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>1,500,000</TD>
+    <TD>1,592,114</TD>
+    <TD>335,242</TD>
+    <TD>335,790</TD>
+    <TD>1.00</TD>
+    <TD>421,073</TD>
+    <TD>1.26</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>2,000,000</TD>
+    <TD>2,122,819</TD>
+    <TD>369,526</TD>
+    <TD>369,567</TD>
+    <TD>1.00</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>2,000,000</TD>
+    <TD>2,122,819</TD>
+    <TD>447,172</TD>
+    <TD>447,781</TD>
+    <TD>1.00</TD>
+    <TD>562,025</TD>
+    <TD>1.26</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <CAPTION align=bottom>Table 1: Experimental results from the BEKU suite. A 
+  partition can occupy 45-55% of the total area. The results are the best of 20 
+  runs. Every node has unit area.</CAPTION></TABLE>
+<P>The examples can be downloaded <A 
+href="http://ballade.cs.ucla.edu/~pubbench/partitioning/download">here</A>. The 
+algorithm for the creation of the benchmarks can be found in [1]. The nodes are 
+assigned to their intial partitions according to their ID: the first partition 
+contains the nodes with even ID, and the second the nodes with odd ID. We obtain 
+the upper bound by improving the initial solutions after one FM pass.&nbsp;<!-------------------------------------------------------------> 
+<HR>
+
+<H2>MEKU suite</H2>The MEKU examples [1] are benchmarks for 8-way partitioning. 
+We tested hMetis[4] and flare [5] on these benchmarks. There are 8 examples with 
+sizes ranging from 0.5M to 2M nodes. The following table shows the experimental 
+results for these benchmarks. <BR>&nbsp; <BR>&nbsp; 
+<TABLE border=1 cols=7 width="100%" NOSAVE>
+  <TBODY>
+  <TR>
+    <TD>#nodes</TD>
+    <TD>#nets</TD>
+    <TD>Upper bound</TD>
+    <TD>hMetis</TD>
+    <TD>hmetis/bound</TD>
+    <TD>flare</TD>
+    <TD>flare/bound</TD></TR>
+  <TR>
+    <TD>500,000</TD>
+    <TD>530,705</TD>
+    <TD>139,943</TD>
+    <TD>144,052</TD>
+    <TD>1.03</TD>
+    <TD>184,790</TD>
+    <TD>1.32</TD></TR>
+  <TR>
+    <TD>500,000</TD>
+    <TD>530,705</TD>
+    <TD>160,163</TD>
+    <TD>188,777</TD>
+    <TD>1.18</TD>
+    <TD>242,074</TD>
+    <TD>1.51</TD></TR>
+  <TR>
+    <TD>1,000,000</TD>
+    <TD>1,061,410</TD>
+    <TD>279,975</TD>
+    <TD>280,328</TD>
+    <TD>1.00</TD>
+    <TD>325,649</TD>
+    <TD>1.16</TD></TR>
+  <TR>
+    <TD>1,000,000</TD>
+    <TD>1,061,410</TD>
+    <TD>320,457</TD>
+    <TD>378,756</TD>
+    <TD>1.18</TD>
+    <TD>485,094</TD>
+    <TD>1.51</TD></TR>
+  <TR>
+    <TD>1,500,000</TD>
+    <TD>1,592,114</TD>
+    <TD>420,279</TD>
+    <TD>433,130</TD>
+    <TD>1.03</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>1,500,000</TD>
+    <TD>1,592,114</TD>
+    <TD>479,971</TD>
+    <TD>566,103</TD>
+    <TD>1.18</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>2,000,000</TD>
+    <TD>2,122,819</TD>
+    <TD>560,275</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <TR>
+    <TD>2,000,000</TD>
+    <TD>2,122,819</TD>
+    <TD>640,459</TD>
+    <TD>755,327</TD>
+    <TD>1.18</TD>
+    <TD>N/A</TD>
+    <TD>N/A</TD></TR>
+  <CAPTION align=bottom>Table 1: Experimental results from the MEKU suite. A 
+  partition can occupy 11.8-13.3% of the total area. The results are the best of 
+  20 runs. Every node has unit area.&nbsp;</CAPTION></TABLE><BR>&nbsp; 
+<P>The examples can be downloaded <A 
+href="http://ballade.cs.ucla.edu/~pubbench/partitioning/download">here</A>. 
+Every node is assigned to an initial partition according to the following 
+formula : Node partition = (Node ID) mod 8. We obtain the upper bound by 
+improving the initial solutions after one multiway FM pass.&nbsp; 
+<HR>
+
+<H2>References</H2>
+<LI>[1] J. Cong, M. Romesis, and M. Xie <B>Optimality, Scalability and Stability 
+Study of Partitioning and Placement Algorithms</B>, International Symposium on 
+Physical Design, 2003, to appear. 
+<LI>[2]<A href="http://vlsicad.cs.ucla.edu/~cheese/ispd98.html"> 
+http://vlsicad.cs.ucla.edu/~cheese/ispd98.html</A> 
+<LI>[3] A. Caldwell, A. Kahng, and I. Markov, <B>Improved Algorithms for 
+Hypergraph Bipartitioning</B>, Proc. Asia and South Pacific Design Automation 
+Conf., Jan. 2000, pp. 661-666. 
+<LI>[4] G. Karypis, B. Aggarwal, V. Kumar, and S. Shekhar, <B>Multi-level 
+Hypergraph Partitioning: Application in VLSI Domain</B>, IEEE Trans. VLSI Syst., 
+vol. 7 , pp.69-79, Mar. 1999. 
+<LI>[5] J. Cong, and S. Lim, <B>Multiway Partitioning with Pairwise 
+Movement</B>, In Proc. Int. Conf. On Computer-Aided Design, pages 512-516, 1998. 
+</LI></BODY></HTML>
