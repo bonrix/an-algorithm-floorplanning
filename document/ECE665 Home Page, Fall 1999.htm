@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0067)http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/ece665.html -->
+<HTML><HEAD><TITLE>ECE665 Home Page, Fall 1999</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR></HEAD>
+<BODY bgColor=#c0c0c0 text=#000000>
+<H3 align=center>University of Massachusetts, Amherst <BR>Department of 
+Electrical &amp; Computer Engineering <BR>Fall 1999 
+<CENTER></CENTER><BR></H3>
+<H2 align=center><B><I>ECE 665 - Physical Design Automation for VLSI Circuits 
+</I></B></H2><BR>
+<H4 align=left>Welcome to an on-line document for ECE 665. You will find here an 
+up-to-date description of the course, including syllabus, slides used during 
+lecture presentations, homework assignments, description of suggested projects, 
+and other hopefully useful information about the course and the field. I welcome 
+all your comments and suggestions. </H4>
+<H4 align=center>Instructor: Maciej Ciesielski <BR>Send mail to <A 
+href="mailto:ciesiel@ecs.umass.edu">ciesiel@ecs.umass.edu</A> 
+<H4 align=center>TA's: none (volunteers welcome). <BR>
+<P>
+<H3 align=center>Course Information</H3>
+<P></P>
+<H4><ALIGN="CENTER"><A 
+href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/syl99.ps">Syllabus 
+for ECE 665 </A>
+<P>
+<H4 align=left>The course introduces basic techniques and algorithms for 
+computer-aided design and optimization of VLSI circuits. It emphasizes 
+analytical approach to design automation through the use of graph theory and 
+mathematical optimization techniques. The first part gives the necessary 
+theoretical background in graph theory and mathematical optimization. In the 
+second part, application of different analytical and heuristic techniques to 
+physical design of VLSI circuits will be studied in detail. We shall emphasize 
+VLSI design issues encountered in deep submicron technology. Througout the 
+course students will be exposed to a set of academic and commercial CAD tools 
+for physical design and to the tools for mathematical optimization. 
+<P>
+<HR>
+<B>Textbook: </B>
+<P>
+<H3 align=center>
+<H3><I>Algorithms for Physical Design Automation </I><BR>Naveed Sherwani 
+<BR>Kluwer Academic Publishers, 1999 (Third Edition).
+<P>
+<H4>The text will be supplemented with a set of lecture notes and copies of 
+selected journal and conference papers. 
+<HR>
+
+<H2 align=center><B>Current Lectures </B></H2>
+<H4 align=left>
+<OL>
+  <LI><I>Sep. 09</I> - Course introduction and organization. Intro to VLSI, CAD, 
+  Physical Design Automation. <BR><B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main1.ps">Physical 
+  Design Automation. </A>
+  <P></P>
+  <LI><I>Sep. 14</I> - VLSI design flow, design styles, VLSI fabrication. 
+  <BR><B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main2.ps">Design 
+  &amp; Fabrication of VLSI Devices. </A>
+  <P></P>
+  <LI><I>Sep. 16</I> - Review of graph theory, basics. Notes: pp. 1-20. Text: 
+  Sections 4.1 - 4.2. 
+  <P></P>
+  <LI><I>Sep. 21</I> - Basic graph algorithms. Notes: pp. 21-53. Text: Section 
+  4.3. <BR><B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main3.ps">Basic 
+  Algorithms. </A>
+  <P></P>
+  <LI><I>Sep. 23</I> - Basic graph algorithms, cont'd. Notes: pp. 54-80. Text: 
+  Sections 4.4 - 4.5. <BR><B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main3.ps">Basic 
+  Algorithms. </A>
+  <P></P>
+  <LI><I>Sep. 28</I> - Mathematical optimization, basics. Convexity, Linear 
+  Programming (LP). Notes: pp. 85 - 113. <BR><B>Handouts: </B>Wismer, Chattergy, 
+  pp. 1-21. Lengauer, pp. 93-105. 
+  <P></P>
+  <LI><I>Sep. 30</I> - Integer linear programming (ILP), total unimodularity. LP 
+  formulation for network flow problems. <BR>Notes: pp. 114-140. <B>Handouts: 
+  </B>Lengauer, pp. 161-199 
+  <P></P>
+  <LI><I>Oct. 05</I> - Invited lecture. Serkan Askar, "Application of ILP to 
+  Datapath Synthesis". <BR><B>Slides (PS)</B>: <A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/mbox_layout.ps">Presentation 
+  slides. </A>Required reading: text, Sections 6 - 6.1.4, and 7.3.3, and 
+  <BR>ICCAD'99 paper: <EM>Analytical Approach to Custom Datapath Design </EM><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/papers/iccad99_mbox.ps">PS 
+  file </A><BR>
+  <P></P>
+  <LI><I>Oct. 07</I> - Duality, Dual LP's. <B>Handouts: <A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/handouts/dual.ps">LP 
+  Duality: Max-flow/min-cut problem. </A><BR>Review of Homework #1 solutions. 
+  <P></P>
+  <LI><I>Oct. 12</I> - Discussion of possible class projects. 
+  <P></P>
+  <LI><I>Oct. 14</I> - Class projects, cont'd. Partitioning algorithms. Text: 
+  Chapter 5. <B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main4.ps">Partitioning 
+  </A><BR>Handouts: S.M. Sait, H. Youssef "VLSI Physical Design Automation", 
+  1995, Sections 2.3 - 2.4. <BR>(Details of Kernighan-Lin and 
+  Fiduccia-Mattheyses algorithms) 
+  <P></P>
+  <LI><I>Oct. 19</I> - Partitioning algorithms; application to placement, 
+  floorplanning, and layer assignment. Text: Chapter 5. 
+  <P></P>
+  <LI><I>Oct. 21</I> - Example: application of F-M algorithm to layer 
+  assignemnt. Handout (1 page). Lawler's clustering algorithm; simulated 
+  annealing. Text: Chapter 5. 
+  <P></P>
+  <LI><I>Oct. 26</I> - Review of Homework #2 solutions. Placement techniques - 
+  placement by partitioning; linear assignment; force directed techniques. 
+  Handouts: notes, pp. 146-172. Text: Chapter 7. 
+  <P></P>
+  <LI><I>Oct. 28</I> - Placement and Floorplanning - analytical methods. 
+  <B>Slides (PS): </B><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main5.ps">Placement 
+  &amp; Floorplanning.</A> <BR>Reading material/handouts: Sait, Youseff, Chapter 
+  4, 3. 
+  <P></P>
+  <LI><I>Nov. 02</I> - Floorplanning, cont'd. Text: Chapter 6. Constrained based 
+  techniques. Handouts: paper by Vijayan/Tsai, TCAD 1991. Reading 
+  material/handouts: Sait, Youseff, Chapter 3. 
+  <P></P>
+  <LI><I>Nov. 04</I> - Floorplanning - analytical and graph theoretic methods. 
+  Handouts: SP graphs, Lengauer, pp. 127-130. Brief review for midterm exam 
+  (today at 7:00 pm). 
+  <P></P>
+  <LI><I>Nov. 09</I> - Review of midterm exam problems. Floorplanning - 
+  Rectangual dual technique. Text: Chapter 7. Reading material/handouts: Sait, 
+  Youseff, Chapter 3. 
+  <P><I>Nov. 11</I> - no class, holiday. 
+  <P></P>
+  <LI><I>Nov. 15</I> (Monday) - Thursday schedule. Exam review. Finish 
+  Rectangual Dual approach to floorplanning. <BR>Interpretation of RD 
+  formulation. 
+  <P></P>
+  <LI><I>Nov. 16</I> Back to mathematics: constrained vs. unconstrained 
+  optimization. Quadratic programming (QP). Convexity of quadratic forms, 
+  positive (semi)definiteness.<BR>Handouts: notes on Lagrange multipliers. 
+  <P></P>
+  <LI><I>Nov. 18</I> Discussion of HM#3 problems. Application of QP to placement 
+  (Blank's eigenvalue method). Handouts + <B>Slides (PS): </B><A 
+  href="http://www.dacafe.com/Book/CH16/CH16.2.htm#33941">Eigenvalue Placement 
+  Algorithm </A>Section 16.2.4 from "Application Specific Integrated Circuits" 
+  by M.J.S. Smith. 
+  <P></P>
+  <LI><I>Nov. 23</I> Eigenvalue Placement Algorithm, cont'd. Lagrange 
+  multipliers - nonlinear optimization with equality constraints. 
+  <P></P>
+  <LI><I>Nov. 30</I> Paper presentations by students. 
+  <UL>
+    <LI>Jian Liang: "Placement based on Resistive Network Optimization", by C.K. 
+    Cheng, E. Kuh, IEEE Trans. on CAD, July 1984, pp. 218-225. 
+    <P></P>
+    <LI>Zhihong Zeng: "Satisfiability-Based Layout Revisited: Detailed Routing 
+    of Complex FPGAs via Search-based Booolean SAT", by G-J. Nam, K. Sakallah, 
+    R. Rutenbar, ACM/SIGDA Intl. Symposium on Field Programmable Gate Arrays 
+    (FPGA'99), Feb. 1999, pp. 167-174. <BR></LI></UL></LI></OL>
+<P>
+<LI><I>Dec. 02 </I>Paper presentations by students, cont'd. 
+<P>
+<UL>
+  <LI>Sriram Swaminatham: "VLSI Module Placement based on Rectangle Packing by 
+  the Sequence Pair" by H. Murata, et.al, IEEE Trans. on CAD, Dec. 1996, pp. 
+  1518-1524.<BR>
+  <P></P>
+  <LI>Swaroop Kaza: "Generic Global Placement and Floorplanning", by H. 
+  Eisenmann, F.Johannes, Proc. Design Automation Conf, 1998, pp. 269-274. 
+  <P></P>
+  <LI>R. Vedula: "On Convex Formulation of the Floorplan Area Minimization 
+  Problem", by T. Chen, M. Fan, Proc. Intl. Symposium on Physical Design, 
+  ISPD-98, 1998, pp. 124-128. 
+  <P></P>
+  <LI>S. Krishnamoorthy: "A DSM Design Flow: Putting Floorplanning, Technology 
+  Mapping, and Gate Placement Together", by A.H. Salek, J. Lou, M. Pedram, Proc. 
+  Design Automation Conference, DAC'98, 1998, pp. 128-133. </LI></UL>
+<P></P>
+<LI><I>Dec. 07 </I>Global routing. Routing models, formulation. Sequential 
+routing: Maze router (Lee). Concurrent routing: routing based on mathematical 
+formulation. <B>Slides (PS): </B><A 
+href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main6.ps">Global 
+Routing. </A>Handouts: Sait/Youseff, pp. 267-270, 276-279. <BR>Text: Chapter 8: 
+Sections 8.1-8.3.1, 8.4-8.5, 8.7, 8.9. 
+<P>Two more presentations: 
+<P>
+<UL>
+  <LI>S. Venkatraman: "Air-Pressure-Model-Based Fast Algorithm for General 
+  Floorplan", by T. Izumi, A. Takahashi, Y. Kajitani, Proc. Intl. Symposium on 
+  Physical Design, ISPD-98, 1998, pp. 563-570. 
+  <P></P>
+  <LI>N. Vemuri: "Congestion Driven Quadratic Placement", by P. Parakh, R. 
+  Brown, K. Sakallah, Proc. Design Automation Conf, 1998, pp. 275-278. 
+  <P></P></LI></UL>
+<P></P>
+<LI><I>Dec. 09 </I>Detailed routing. Routing models, constraints. Channel 
+routing; two-layer, three-layer (restricted). Left-edge algorithm, YK algorithm. 
+<B>Slides (PS): </B><A 
+href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/slides/main7.ps">Detailed 
+Routing. </A>Handouts: Sait/Youseff, pp. 289-301. <BR>Text: Chapter 9: Sections 
+9.1-9.2, 9.4.1-9.4.2.2, 9.4.3.1, 9.5.1, 9.8. 
+<P></P>
+<LI><I>Dec. 14 </I>Review session for final exam. 
+<P>
+<OL></OL>
+<P>THIS IS IT ! Get ready for the FINAL EXAM (Dec. 16, 8:00 am, HAS 104A) </H4>
+<HR>
+
+<H2 align=center><B>Important Announcements </B></H2>
+<H4 align=left>
+<UL>
+  <LI>Presenters of the papers: <BR>submit a one-page abstract plus a copy of 
+  the presented slides. Due: last day of classes. 
+  <P></P>
+  <LI>FINAL EXAM, Dec. 16, 8:00 am, HAS 104A. <BR>The exam will be CLOSED NOTES, 
+  CLOSED BOOKS, OPEN MINDS, up to 2 hours long. The exam is comprehensive, with 
+  emphasis on Placement, Floorplanning, and Routing algorithms and methods (both 
+  graph-based and analytical). Material for the exam: all material covered in 
+  class. Text, Chapters 1,2, 4-9. All notes distributed in class (my notes, 
+  selected chapters from Lengauer, Sait/Youseff, Smith, etc.). 
+  <P>
+  <UL>
+    <LI>Graph theory; basic graph algorithms: longest/shortest paths, spanning 
+    trees, assignment, matching, network flow problems, etc. 
+    <P></P>
+    <LI>Mathematical programming: Linear and integer programming. Convexity, 
+    duality, unimodularity. Special LPs, relationship to graph algorithms. 
+    <P></P>
+    <LI>Partitioning, applications to physical design automation. 
+    <P></P>
+    <LI>Floorplanning: graph-based, slicing trees, SP graphs; based on 
+    analytical formulation; rectangular dual. 
+    <P></P>
+    <LI>Placement: partitioning-based; based on analytical formulation; 
+    quadratic placement (eigenvalue method). 
+    <P></P>
+    <LI>Global routing: maze routing, graph-based routing, routing based on 
+    mathematical programming. 
+    <LI>Detailed routing: single-layer vs. multi-layer; routing models. Channel 
+    routing, left edge algorithm, constraints. </LI></UL>
+  <HR>
+  STUDENT PRESENTATIONS of RESEARCH PAPERS 
+  <P>I have prepared set of papers for student presentations. Some of them have 
+  already been assigned (see "presenter"). The papers will be presented the week 
+  of Nov. 22. and 29 in class. 
+  <P>Note that paper presentation is mandatory for those of you who are not 
+  taking the project. Attendance for the presentations is mandatory for 
+  everybody (and so is the every class attendance, which some of you continue to 
+  violate). I have copies of all the papers. 
+  <UL>
+    <LI>"Placement based on Resistive Network Optimization", by C.K. Cheng, E. 
+    Kuh, IEEE Trans. on CAD, July 1984, pp. 218-225 <BR>PRESENTER: Jian Liang. 
+    <LI>"Satisfiability-Based Layout Revisited: Detailed Routing of Complex 
+    FPGAs via Search-based Booolean SAT", G-J. Nam, K. Sakallah, R. Rutenbar, 
+    ACM/SIGDA Intl. Symposium on Field Programmable Gate Arrays (FPGA'99), Feb. 
+    1999, pp. 167-174. <BR>PRESENTER: Zhihong Zeng. 
+    <LI>"Generic Global Placement and Floorplanning", by H. Eisenmann, 
+    F.Johannes, Proc. Design Automation Conf, 1998, pp. 269-274. <BR>Suggested 
+    PRESENTER: Swaroop Kaza. 
+    <LI>"VLSI Module Placement based on Rectangle Packing by the Sequence Pair" 
+    by H. Murata, et.al, IEEE Trans. on CAD, Dec. 1996, pp. 
+    1518-1524.<BR>PRESENTER: Sriram Swaminatham. 
+    <LI>"MASON: a Constructive Floorplanning Method", by D. Lapotin, 
+    et.al.<BR>PRESENTER: ?? 
+    <LI>"On Convex Formulation of the Floorplan Area Minimization Problem", by 
+    T. Chen, M. Fan, Proc. Intl. Symposium on Physical Design, ISPD-98, 1998, 
+    pp. 124-128.<BR>PRESENTER: R. Vedula. 
+    <LI>"A DSM Design Flow: Putting Floorplanning, Technology Mapping, and Gate 
+    Placement Together", by A.H. Salek, J. Lou, M. Pedram, Proc. Design 
+    Automation Conference, DAC'98, 1998, pp. 128-133.<BR>PRESENTER: S. 
+    Krishnamoorthy. 
+    <LI>"Congestion Driven Quadratic Placement", by P. Parakh, et.al. Proc. 
+    Design Automation Conf, 1998, pp. 275-278.<BR>PRESENTER: N. Vemuri. 
+  </LI></UL>PRESENTATION FORMAT 
+  <P>Presentation time: less than 20 minutes, so we can fit at least 3 in one 
+  class. Prepare a set of transparencies or power-point slides, if you prefer. I 
+  will provide a laptop and the projector. 
+  <HR>
+
+  <H2 align=center><B>Homework Assignments </B></H2>
+  <H4 align=left>
+  <UL>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm1.ps">Homework 
+    #1 </A>, due 09.28. <BR>Please make sure to read Section 4.5 to understand 
+    the concept of Interval Graph and Permutation Graph. 
+    <P></P>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm2.ps">Homework 
+    #2 </A>, due 10.14. <BR>Read the ICCAD'99 paper. 
+    <P></P>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm3.ps">Homework 
+    #3 </A>, due 11.02, extended to 11.09. See the hardcopy with circuit 
+    drawings. <BR>You should know how to solve the problems in this homework 
+    prior to the exam. It will help you master the material for the exam. 
+    <P></P>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm4.ps">Homework 
+    #4 </A>, due 11.18. See the hardcopy with figures. 
+    <P></P>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm5.ps">Homework 
+    #5 </A>, due 12.02. 
+    <P></P>
+    <LI><A 
+    href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/hm/hm6.ps">Homework 
+    #6 </A>, due 12.15. 
+    <P></P></LI></UL></H4>
+  <HR>
+
+  <H2 align=center><B>Suggested Design Projects</B></H2>
+  <H4 align=left><A 
+  href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece665/fall99/handouts/projects.ps">Suggested 
+  projects </A>. 
+  <P>Relevant reading: 
+  <OL>
+    <LI>Text (Sherwani), Sections 5.3 - 5.4, Partitioning. 
+    <LI>Text (Sherwani), Section 6.1, Floorplanning. 
+    <LI>S.M. Sait, H. Youssef "VLSI Physical Design Automation", 1995, Sections 
+    2.3 - 2.4. (see Handouts). 
+    <LI>Text (Sherwani), Sections 12.5 - 12.6, 2-D Compaction. </LI></OL></H4>
+  <HR>
+
+  <H2 align=center><B>Miscelaneous News </B></H2>
+  <H2 align=left>
+  <UL></UL>
+  <HR>
+
+  <P>
+  <H4 align=left>Send bug report to <A 
+  href="mailto:ciesiel@ecs.umass.edu">ciesiel@ecs.umass.edu</A> 
+  <BR></H4></H2></LI></UL></H4></LI></B></H4></H3></H3></H4></H4></H4></H4></BODY></HTML>

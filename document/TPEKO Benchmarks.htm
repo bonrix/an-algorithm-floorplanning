@@ -1,0 +1,1079 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://ballade.cs.ucla.edu/~pubbench/floor/ -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel" xmlns:p = 
+"urn:schemas-microsoft-com:office:powerpoint" xmlns:oa = 
+"urn:schemas-microsoft-com:office:activation" xmlns:st1 = 
+"urn:schemas-microsoft-com:office:smarttags"><HEAD><TITLE>TPEKO Benchmarks</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 5.00.3502.5390" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="feko_files/filelist.xml" rel=File-List><LINK 
+href="feko_files/editdata.mso" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType name="State" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><o:SmartTagType 
+name="City" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><o:SmartTagType 
+name="PlaceName" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><o:SmartTagType 
+name="PlaceType" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><o:SmartTagType 
+name="place" 
+namespaceuri="urn:schemas-microsoft-com:office:smarttags"></o:SmartTagType><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<OBJECT classid=clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D id=ieooui></OBJECT>
+<STYLE>st1\:* {
+	BEHAVIOR: url(#ieooui)
+}
+</STYLE>
+<![endif]-->
+<STYLE>@font-face {
+	font-family: Tahoma;
+}
+@font-face {
+	font-family: \000B;
+}
+@font-face {
+	font-family: ;
+}
+@font-face {
+	font-family: \@\000B;
+}
+@font-face {
+	font-family: \@;
+}
+@font-face {
+	font-family: CMR9;
+}
+P.MsoNormal {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+LI.MsoNormal {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+DIV.MsoNormal {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+P.MsoCaption {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 10pt; FONT-WEIGHT: bold; MARGIN: 6pt 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-style-next: Normal
+}
+LI.MsoCaption {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 10pt; FONT-WEIGHT: bold; MARGIN: 6pt 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-style-next: Normal
+}
+DIV.MsoCaption {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 10pt; FONT-WEIGHT: bold; MARGIN: 6pt 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-style-next: Normal
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+P.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-font-kerning: 1.0pt
+}
+LI.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-font-kerning: 1.0pt
+}
+DIV.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-font-kerning: 1.0pt
+}
+P {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+P.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+LI.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+DIV.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; mso-fareast-font-family: "Times New Roman"; mso-pagination: none; mso-fareast-language: EN-US; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+P.xl24 {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+LI.xl24 {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+DIV.xl24 {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+P.xl25 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl25
+}
+LI.xl25 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl25
+}
+DIV.xl25 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl25
+}
+P.xl26 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl26
+}
+LI.xl26 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl26
+}
+DIV.xl26 {
+	FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl26
+}
+P.xl27 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl27; mso-border-right-alt: solid windowtext .5pt
+}
+LI.xl27 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl27; mso-border-right-alt: solid windowtext .5pt
+}
+DIV.xl27 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl27; mso-border-right-alt: solid windowtext .5pt
+}
+P.xl28 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28; mso-border-bottom-alt: solid windowtext .5pt
+}
+LI.xl28 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28; mso-border-bottom-alt: solid windowtext .5pt
+}
+DIV.xl28 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28; mso-border-bottom-alt: solid windowtext .5pt
+}
+P.xl29 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl29; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+LI.xl29 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl29; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+DIV.xl29 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl29; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+P.xl30 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl30; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl30 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl30; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl30 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl30; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl31 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl31; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl31 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl31; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl31 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl31; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl32 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl32; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl32 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl32; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl32 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl32; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl33 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl33; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl33 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl33; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl33 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl33; mso-border-right-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl34 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl34; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl34 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl34; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl34 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl34; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl35 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl35; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl35 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl35; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl35 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl35; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl36 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl36; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl36 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl36; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl36 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl36; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl37 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl37; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl37 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl37; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl37 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl37; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl38 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl38; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl38 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl38; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl38 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl38; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl39 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl39; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl39 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl39; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl39 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl39; mso-border-bottom-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl40 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl40; mso-border-bottom-alt: solid windowtext .5pt
+}
+LI.xl40 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl40; mso-border-bottom-alt: solid windowtext .5pt
+}
+DIV.xl40 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl40; mso-border-bottom-alt: solid windowtext .5pt
+}
+P.xl41 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl41; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+LI.xl41 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl41; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+DIV.xl41 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl41; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt
+}
+P.xl42 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl42; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl42 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl42; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl42 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl42; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl43 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl43; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+LI.xl43 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl43; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+DIV.xl43 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl43; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+P.xl44 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl44; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+LI.xl44 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl44; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+DIV.xl44 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl44; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+P.xl22 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl22; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+LI.xl22 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl22; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+DIV.xl22 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl22; mso-border-right-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt
+}
+P.xl23 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl23; mso-border-right-alt: solid windowtext .5pt
+}
+LI.xl23 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl23; mso-border-right-alt: solid windowtext .5pt
+}
+DIV.xl23 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl23; mso-border-right-alt: solid windowtext .5pt
+}
+P.xl45 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl45; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+LI.xl45 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl45; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+DIV.xl45 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl45; mso-border-right-alt: solid windowtext .5pt; mso-border-bottom-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt
+}
+P.xl46 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl46; mso-border-top-alt: solid windowtext .5pt
+}
+LI.xl46 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl46; mso-border-top-alt: solid windowtext .5pt
+}
+DIV.xl46 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: Arial; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; TEXT-ALIGN: center; mso-fareast-font-family: "\000B"; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl46; mso-border-top-alt: solid windowtext .5pt
+}
+P.xl47 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47; mso-border-bottom-alt: solid windowtext .5pt
+}
+LI.xl47 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47; mso-border-bottom-alt: solid windowtext .5pt
+}
+DIV.xl47 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-FAMILY: "\000B"; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-padding-alt: 0in 0in 0in 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: EN-US; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47; mso-border-bottom-alt: solid windowtext .5pt
+}
+SPAN.SpellE {
+	mso-style-name: ""; mso-spl-e: yes
+}
+SPAN.GramE {
+	mso-style-name: ""; mso-gram-e: yes
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US link=blue style="tab-interval: .5in" vLink=purple>
+<DIV class=Section1>
+<P align=center style="TEXT-ALIGN: center"><A name=_Ref22982115></A><B><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 18pt">FEKO-A 
+Suite<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><B><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 18pt">(<SPAN 
+class=SpellE>Floorplanning</SPAN> Examples with Known Optimal 
+Area)<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt">Director 
+:</SPAN></SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt"> 
+</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'"><A 
+href="http://cadlab.cs.ucla.edu/~cong"><SPAN style="FONT-SIZE: 13.5pt">Prof. 
+Jason Cong</SPAN></A><o:p></o:p></SPAN></P>
+<P align=center style="MARGIN-LEFT: 1in; TEXT-ALIGN: center"><SPAN 
+class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt">Author 
+:</SPAN></SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt"> 
+<SPAN class=SpellE>Michail</SPAN> <SPAN class=SpellE>Romesis</SPAN> 
+<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="COLOR: maroon; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt">Copyright© 
+2003-2004<I> the Regents of </I></SPAN><st1:place><st1:PlaceType><I><SPAN 
+style="COLOR: maroon; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt">University</SPAN></I></st1:PlaceType><I><SPAN 
+style="COLOR: maroon; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt"> of 
+</SPAN></I><st1:PlaceName><I><SPAN 
+style="COLOR: maroon; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt">California</SPAN></I></st1:PlaceName></st1:place><I><SPAN 
+style="COLOR: maroon; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 13.5pt"><o:p></o:p></SPAN></I></P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">
+<HR align=center SIZE=3 width="100%">
+</SPAN></DIV>
+<P style="MARGIN: 0in 0in 0pt"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: "><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">Example 
+Description<o:p></o:p></SPAN></I></B></P>
+<P><SPAN style="FONT-FAMILY: 'Times New Roman'">The FEKO-A suite is developed at 
+<A href="http://cadlab.cs.ucla.edu/">UCLA VLSI CAD LAB</A> [1<SPAN 
+class=GramE>,2</SPAN>]. <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>8 <SPAN 
+class=SpellE>floorplanning</SPAN> examples were generated starting from 
+originals from the GSRC and MCNC suite. Their only difference is the aspect 
+ratios of the blocks, which are set to values that guarantee a zero <SPAN 
+class=SpellE>deadspace</SPAN> solution for them. Using these examples, one can 
+evaluate the performance of <SPAN class=SpellE>floorplanning</SPAN> algorithms 
+in terms of area minimization. Table 1 gives the characteristics of the FEKO-A 
+suite and the performance of four <SPAN class=SpellE>floorplanning</SPAN> 
+algorithms [3<SPAN class=GramE>,4,5,6</SPAN>] on the FEKO-A examples. The 
+examples can be downloaded <A 
+href="http://cadlab.cs.ucla.edu/~pubbench/floor/feko_link.htm">here</A>.<o:p></o:p></SPAN></P>
+<P class=MsoCaption style="TEXT-ALIGN: justify"><SPAN class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">Table </SPAN></SPAN><!--[if supportFields]><span
+style='font-family:"Times New Roman"'><span style='mso-element:field-begin'></span><span
+class=GramE>SEQ Table \* ARABIC<span style='mso-element:field-separator'></span></span></span><![endif]--><SPAN 
+style="FONT-FAMILY: 'Times New Roman'"><SPAN class=GramE>1</SPAN></SPAN><!--[if supportFields]><span
+style='font-family:"Times New Roman"'><span style='mso-element:field-end'></span></span><![endif]--><SPAN 
+style="FONT-FAMILY: 'Times New Roman'"><SPAN class=GramE>.</SPAN> <SPAN 
+class=GramE>The <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>FEKO</SPAN>-A 
+suite. Column "<SPAN class=SpellE>Orig</SPAN>" shows the initial circuit from 
+which the synthetic circuits are derived. <SPAN 
+style="mso-spacerun: yes">&nbsp;</SPAN>Column “Blocks” shows the number of 
+blocks on the circuit. <SPAN style="mso-bidi-font-style: italic">The remaining 
+columns show the performance of <SPAN class=SpellE>floorplanning</SPAN> 
+algorithms (Parquet-<SPAN class=GramE>2 ,</SPAN><SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>TCG-S, B*-tree and <SPAN 
+class=SpellE>BloBB</SPAN>) in <SPAN class=SpellE>deadspace</SPAN> and runtime on 
+the FEKO-A examples. The running times are on a Pentium 4 2.4 GHz processor 
+except for TCG-S (750 MHz on Solaris).</SPAN><o:p></o:p></SPAN></P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=3 class=MsoNormalTable 
+style="BORDER-BOTTOM: 1pt outset; BORDER-LEFT: 1pt outset; BORDER-RIGHT: 1pt outset; BORDER-TOP: 1pt outset; MARGIN-LEFT: 27.25pt; WIDTH: 561.3pt; mso-cellspacing: 2.0pt; mso-border-alt: outset windowtext .25pt; mso-padding-alt: 0in 0in 0in 0in" 
+width=748>
+  <TBODY>
+  <TR style="HEIGHT: 0.1in; mso-yfti-irow: 0">
+    <TD 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-border-alt: inset windowtext .25pt">
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">Circuit<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-border-alt: inset windowtext .25pt">
+      <P class=MsoNormal><SPAN class=SpellE><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">Orig</SPAN></SPAN><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; PADDING-TOP: 0in; mso-border-alt: inset windowtext .25pt">
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">Blocks<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    width=87>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">Parquet-2 DS 
+      (%)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">Parquet-2 RT 
+      (sec)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    width=62>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">B*-tree DS 
+    (%)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    width=61>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">B*-tree RT 
+      (sec)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    width=59>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">TCG-S DS 
+    (%)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    width=57>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">TCG-S RT 
+    (sec)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    width=55>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      class=SpellE><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">BloBB</SPAN></SPAN><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'"> DS (%)<o:p></o:p></SPAN></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.1in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    width=66>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      class=SpellE><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'">BloBB</SPAN></SPAN><SPAN 
+      style="FONT-FAMILY: 'Times New Roman'"> RT 
+  (sec)<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 1">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA1</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN class=SpellE><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">apte</SPAN></SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">9</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">14.36</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.03</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">4.76</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.65</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">5.40</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.4</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.01</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 2">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA2</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">hp</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">11</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">9.69</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.04</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">6.74</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.10</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.66</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.5</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">52.48</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 3">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA3</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN class=SpellE><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">xerox</SPAN></SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">10</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">11.31</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.03</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">3.95</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.44</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">3.61</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.4</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">4.91</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 4">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA4</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">ami33</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">33</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">6.26</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.25</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">2.32</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">24.16</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">4.62</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.7</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">4.58</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">1.12</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 5">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA5</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">ami49</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">49</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">5.55</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">0.54</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">2.05</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">46.29</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">4.80</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">24.0</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">6.56</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">23.34</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 6">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA6</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">n300</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">300</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">9.11</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">28.04</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.99</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">47.85</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">10.98</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">392.3</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.56</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">7.51</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 7">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA7</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">ami49-10x</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">490</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.70</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">86.65</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">11.99</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">93.59</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">15.30</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">651.3</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">8.81</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">10.67</SPAN><o:p></o:p></P></TD></TR>
+  <TR style="HEIGHT: 0.25in; mso-yfti-irow: 8; mso-yfti-lastrow: yes">
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 57.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=77>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">FEKOA8</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <DIV>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">n300-10x</SPAN><o:p></o:p></P></DIV></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 43.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=58>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">3000</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 65.1pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=87>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">21.17</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 55.45pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=74>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">1383</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 46.6pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=62>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">27.35</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 45.7pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=61>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">6433</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 44.2pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=59>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">N/A</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 42.5pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=57>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">N/A</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 41.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=55>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">12.06</SPAN><o:p></o:p></P></TD>
+    <TD noWrap 
+    style="BORDER-BOTTOM: 1pt inset; BORDER-LEFT: 1pt inset; BORDER-RIGHT: 1pt inset; BORDER-TOP: 1pt inset; HEIGHT: 0.25in; PADDING-BOTTOM: 0in; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 49.25pt; mso-border-alt: inset windowtext .25pt" 
+    vAlign=top width=66>
+      <P class=MsoNormal><SPAN 
+      style="FONT-FAMILY: Tahoma; mso-bidi-font-weight: bold">7.03</SPAN><o:p></o:p></P></TD></TR></TBODY></TABLE></DIV>
+<P style="MARGIN: 0in 0in 0pt"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'"><o:p>&nbsp;</o:p></SPAN></P>
+<P><B><I><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">References<o:p></o:p></SPAN></I></B></P>
+<P><SPAN style="FONT-FAMILY: 'Times New Roman'">[1] J. Cong, G. <SPAN 
+class=SpellE>Natanieli</SPAN>, M. <SPAN class=SpellE>Romesis</SPAN>, and J. 
+<SPAN class=SpellE>Shinnerl</SPAN>, "An Area-Optimality Study of <SPAN 
+class=SpellE>Floorplanning</SPAN>," in Proc. International Symposium on Physical 
+Design, pp. 78 -- 83, 2004. <o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">[2<SPAN class=GramE>] <SPAN 
+style="FONT-FAMILY: CMR9; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: CMR9; mso-fareast-language: EN-US"><SPAN 
+style="mso-spacerun: yes">&nbsp;</SPAN></SPAN><SPAN 
+style="mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">J</SPAN></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">. 
+<SPAN class=SpellE>Shinnerl</SPAN>. <SPAN class=GramE>A theorem on partitioning 
+a sorted list of<SPAN style="FONT-SIZE: 9pt"> </SPAN>numbers with an application 
+to VLSI <SPAN class=SpellE>floorplanning</SPAN>.</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"> 
+</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">Report 
+040006, Computer Science Dept., </SPAN><st1:place><st1:PlaceType><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">University</SPAN></st1:PlaceType><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt"> 
+of</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"> 
+</SPAN><st1:PlaceName><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">California</SPAN></st1:PlaceName></st1:place><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">, 
+</SPAN><st1:City><st1:place><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">Los 
+Angeles</SPAN></st1:place></st1:City><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">,</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">http://www.cs.ucla.edu/~shinnerl, 
+Feb. 2004.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-font-size: 9.0pt">[3] 
+</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US">S. 
+<SPAN class=SpellE>Adya</SPAN> and </SPAN></SPAN><st1:place><SPAN 
+class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US">I.</SPAN></SPAN></st1:place><SPAN 
+class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"> 
+Markov.</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"> 
+<SPAN class=GramE>Fixed-outline <SPAN class=SpellE>floorplanning</SPAN> through 
+better local search.</SPAN> In <I>Proc. International</I> <I>Conference on 
+Computer Design</I>, pages 328–334, 2001.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US">[4<SPAN 
+class=GramE>] <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>Y.C</SPAN>. Chang, 
+Y.W. Chang, G. Wu, and S. Wu. B*-trees: A new representation for non-slicing 
+<SPAN class=SpellE>floorplans</SPAN>. In <I>Proc. Design Automation 
+Conference</I>, pages 458–463, 2000.</SPAN><SPAN 
+style="FONT-FAMILY: CMR9; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: CMR9; mso-fareast-language: EN-US"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: CMR9; FONT-SIZE: 9pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: CMR9; mso-fareast-language: EN-US"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US">[5<SPAN 
+class=GramE>] <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>J</SPAN>. Lin and Y. 
+Chang. TCG-S: Orthogonal coupling of P*-admissible representations for general 
+<SPAN class=SpellE>floorplans</SPAN>. In <I>Proceedings of the Design Automation 
+Conference</I>, pages 842 – 847, 2002.<o:p></o:p></SPAN></P>
+<P><SPAN class=GramE><SPAN style="FONT-FAMILY: 'Times New Roman'">[6] H. H. Chan 
+and </SPAN></SPAN><st1:place><SPAN class=GramE><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">I.</SPAN></SPAN></st1:place><SPAN 
+class=GramE><SPAN style="FONT-FAMILY: 'Times New Roman'"> L. Markov, ``Practical 
+Slicing and <SPAN class=SpellE>Nonslicing</SPAN> Block-Packing without Simulated 
+Annealing'', Proc.</SPAN></SPAN><SPAN style="FONT-FAMILY: 'Times New Roman'"> 
+Great Lakes <SPAN class=SpellE>Symp</SPAN>. <SPAN class=GramE>on</SPAN> VLSI 
+(GLSVLSI), </SPAN><st1:place><st1:City><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">Boston</SPAN></st1:City><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">, </SPAN><st1:State><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">Massachusetts</SPAN></st1:State></st1:place><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">, April 2004, pp. 
+282-287.<o:p></o:p></SPAN></P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'">
+<HR align=center SIZE=3 width="100%">
+</SPAN></DIV>
+<P><SPAN style="FONT-FAMILY: 'Times New Roman'">Please direct your questions to 
+<A href="mailto:michail@cs.ucla.edu">michail@cs.ucla.edu</A>. 
+<o:p></o:p></SPAN></P></DIV></BODY></HTML>

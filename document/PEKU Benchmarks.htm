@@ -1,0 +1,2375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0044)http://cadlab.cs.ucla.edu/~pubbench/peku.htm -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:p = 
+"urn:schemas-microsoft-com:office:powerpoint"><HEAD><TITLE>PEKU Benchmarks</TITLE>
+<META content="text/html; charset=GB2312" http-equiv=Content-Type>
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 5.00.3502.5390" name=GENERATOR>
+<META content="Microsoft Word 9" name=Originator><LINK 
+href="./peku_files/filelist.xml" rel=File-List><LINK 
+href="./peku_files/editdata.mso" rel=Edit-Time-Data><LINK 
+href="./peku_files/oledata.mso" rel=OLE-Object-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: SimSun;
+}
+@font-face {
+	font-family: SimHei;
+}
+@font-face {
+	font-family: Tahoma;
+}
+@font-face {
+	font-family: NJ Chinese Simplified;
+}
+@font-face {
+	font-family: \@SimSun;
+}
+@font-face {
+	font-family: \@SimHei;
+}
+@font-face {
+	font-family: \@NJ Chinese Simplified;
+}
+P.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+LI.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+DIV.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+H1 {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; FONT-STYLE: italic; FONT-WEIGHT: bold; MARGIN: 0in 0in 0pt; mso-pagination: widow-orphan; mso-fareast-language: ZH-CN; mso-style-next: Normal; mso-outline-level: 1; mso-fareast-font-family: "NJ Chinese Simplified"; mso-font-kerning: 0pt
+}
+P.MsoCaption {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN: 0in 0in 4pt; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: Tahoma; mso-fareast-language: EN-AU; mso-style-next: Normal; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoCaption {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN: 0in 0in 4pt; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: Tahoma; mso-fareast-language: EN-AU; mso-style-next: Normal; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoCaption {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN: 0in 0in 4pt; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-bidi-font-family: Tahoma; mso-fareast-language: EN-AU; mso-style-next: Normal; mso-fareast-font-family: "Times New Roman"
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+P.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-bidi-font-size: 10.0pt
+}
+LI.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-bidi-font-size: 10.0pt
+}
+DIV.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-bidi-font-size: 10.0pt
+}
+P {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+P.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+LI.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+DIV.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+P.xl24 {
+	FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+LI.xl24 {
+	FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+DIV.xl24 {
+	FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl24
+}
+P.xl28 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28
+}
+LI.xl28 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28
+}
+DIV.xl28 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl28
+}
+P.xl47 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47
+}
+LI.xl47 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47
+}
+DIV.xl47 {
+	COLOR: red; FONT-FAMILY: Arial; FONT-SIZE: 9pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; TEXT-ALIGN: center; mso-pagination: widow-orphan; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 10.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-style-name: xl47
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1033"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US link=blue style="tab-interval: .5in" vLink=purple>
+<DIV class=Section1>
+<P align=center style="TEXT-ALIGN: center"><B><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 18pt">P<A name=_Ref22982115></A>EKU 
+Suite<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><B><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 18pt">( Placement Example with Known 
+Upperbound of wirelength )<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="FONT-SIZE: 13.5pt">Director : </SPAN><A 
+href="http://cadlab.cs.ucla.edu/~cong"><SPAN style="FONT-SIZE: 13.5pt">Prof. 
+Jason Cong</SPAN></A></P>
+<P align=center style="MARGIN-LEFT: 1in; TEXT-ALIGN: center"><SPAN 
+style="FONT-SIZE: 13.5pt">Authors : <A 
+href="http://ballade.cs.ucla.edu/~michail">Michail Romesis</A> and Min 
+Xie<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="COLOR: maroon; FONT-SIZE: 13.5pt">Copyright&copy; 2002-2003<I> the Regents of 
+University of California<o:p></o:p></I></SPAN></P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center">
+<HR align=center SIZE=3 width="100%">
+</DIV>
+<P class=MsoNormal><SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">　</SPAN><SPAN 
+style="FONT-FAMILY: SimHei"><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN 
+style="FONT-FAMILY: Arial">Motivation<o:p></o:p></SPAN></I></B></P>
+<P class=MsoNormal>The <SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">study with the <A 
+href="http://ballade.cs.ucla.edu/~pubbench/peko.htm">PEKO</A> suite suffers one 
+drawback</SPAN>. <SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">In the optimal 
+solutions,</SPAN> <SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">all the nets are local, 
+i.e., their wirelength is the minimum possible value. This may not be true in 
+real circuits, which may also have global connections that span the entire chip, 
+even when they are optimally placed. It can be seen that although the number of 
+global connections is small, their wirelength contribution is significant. 
+Therefore, the performance of a placer can be quite different due to the 
+presence of these global nets. It is worthwhile to study the effectiveness and 
+stability of different placers in the presence of global nets. 
+<o:p></o:p></SPAN></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN style="FONT-FAMILY: Arial">Circuit 
+Description<o:p></o:p></SPAN></I></B></P>
+<P><B><I>G-PEKU<o:p></o:p></I></B></P>
+<H1><SPAN style="FONT-STYLE: normal; FONT-WEIGHT: normal">One way to introduce 
+global connections is to create circuits with global nets only. We constructed 
+examples where each net spans either an entire row or column, as shown in Fig. 
+1. The number of nets is the total number of rows and columns. Such an example 
+is similar to datapath placement example, where data flows horizontally through 
+the bit-slice along buses, while control signal flows vertically. One solution 
+to such benchmarks has a configuration similar to Fig. 1. An upper bound of the 
+optimal wirelength is the sum of the length of each row and column. Additional 
+input includes the aspect ratio of the chip. In our construction, we extracted 
+the module numbers from ISPD [2] and use aspect ratio of 1. Table 1 gives the 
+characteristics of fives circuits used in [2]. The circuits can be downloaded <A 
+href="http://ballade.cs.ucla.edu/~pubbench/PEKU/down_load.html">here</A>.<o:p></o:p></SPAN></H1>
+<P class=MsoNormal><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></SPAN></P>
+<P class=MsoCaption><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 12pt; FONT-WEIGHT: normal; mso-bidi-font-size: 9.0pt">Figure 
+1.</SPAN><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 12pt; FONT-WEIGHT: normal; mso-fareast-language: ZH-CN; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-bidi-font-size: 9.0pt"> 
+Circuit with global connections only</SPAN><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 12pt; FONT-WEIGHT: normal; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-bidi-font-size: 9.0pt"><o:p></o:p></SPAN></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"><!--[if gte vml 1]><v:shapetype 
+id=_x0000_t75 coordsize = "21600,21600" o:preferrelative = "t" filled = "f" 
+stroked = "f" path = "m@4@5l@4@11@9@11@9@5xe" o:spt = "75"><v:stroke joinstyle = 
+"miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock v:ext="edit" 
+aspectratio = "t"></o:lock></v:shapetype><v:shape id=_x0000_i1026 
+style="HEIGHT: 144.75pt; WIDTH: 209.25pt" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600" fillcolor = "winColor(17)"><v:imagedata o:title="" src 
+= "./peku_files/image001.wmz"></v:imagedata></v:shape><![endif]--><![if !vml]><img border=0 width=279 height=193
+src="./peku_files/image002.gif" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1106747298">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></SPAN></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></SPAN></P>
+<P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: Arial">Table 1. Characteristics of 
+G-PEKU<o:p></o:p></SPAN></P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=3 
+style="BORDER-BOTTOM: silver 0.75pt outset; BORDER-LEFT: silver 0.75pt outset; BORDER-RIGHT: silver 0.75pt outset; BORDER-TOP: silver 0.75pt outset; WIDTH: 369pt; mso-cellspacing: 2.0pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt" 
+width=492>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center">circuit</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center">#cell</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center">#net</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center">#row</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">UB<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center">GPeku01</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">224</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">113</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">7</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-hansi-font-family: Arial">.</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">93</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-hansi-font-family: Arial">E5<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">GPeku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">336</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">169</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">1.79E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center">GPeku10</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">525</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">263</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">4.38E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center">GPeku15</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">803</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">402</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">1.03E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center">GPeku18</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">918</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    vAlign=top width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="mso-bidi-font-family: Arial; mso-hansi-font-family: Arial">460</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: silver 0.75pt inset; BORDER-LEFT: silver 0.75pt inset; BORDER-RIGHT: silver 0.75pt inset; BORDER-TOP: silver 0.75pt inset; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 73.8pt" 
+    width=98>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-hansi-font-family: Arial">1.34E7<o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE></DIV>
+<P><B><I>PEKU<o:p></o:p></I></B></P>
+<P class=MsoNormal>The second approach is to introduce non-local nets into 
+benchmarks which have only local nets in the optimal solution. Compared with 
+local nets, the non-local nets usually have a longer wirelength, and are used to 
+mimic the global connections in our study. We used the module number and net 
+distribution vector extracted from ISPD98 [2]. <SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">By varying the 
+percentage of non-local nets in the placement examples, we generated several 
+sets of placement examples with known upperbound of wirelength. These circuits 
+are grouped as PEKU suite. Table 2 gives a description of the circuits. 
+</SPAN>The circuits can be downloaded <A 
+href="http://ballade.cs.ucla.edu/~pubbench/PEKU/down_load.html">here</A>.</P>
+<P 
+class=MsoNormal><B><I><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></I></B></P>
+<P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: Arial">Table 2. Characteristics of 
+PEKU<o:p></o:p></SPAN></P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=3 
+style="mso-cellspacing: 2.0pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt">
+  <TBODY>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center">% non-local nets<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center">circuit<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center">#cell<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center">#net<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    width=55>
+      <P align=center style="TEXT-ALIGN: center">#row<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    width=104>
+      <P align=center style="TEXT-ALIGN: center">Row utilization<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center">LB<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center">UB<SPAN 
+      style="mso-bidi-font-size: 10.0pt"><o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center">0</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">0.25%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">9.23E5<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.24E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">6.17E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.71E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.01E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">0.50%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.02E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.63E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">7.52E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.30E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.75E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">0.75%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.12E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.95E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">9.09E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.84E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.43E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.25E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.31E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.06E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.39E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.19E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">2%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.67E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.70E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.68E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">5.66E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">7.01E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">5%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.02E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">9.06E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.44E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.24E8<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.56E8<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD rowSpan=5 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 63.85pt" 
+    width=85>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">10%<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">113</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">8.14E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">5.28E6<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">Peku05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">169</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.63E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">263</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.73E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">6.43E7<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center">402</P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.15E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.37E8<o:p></o:p></SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 54.3pt" 
+    width=72>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Peku</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 52.8pt" 
+    width=70>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 41.4pt" 
+    vAlign=top width=55>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 78.3pt" 
+    vAlign=top width=104>
+      <P align=center style="TEXT-ALIGN: center">85%<SPAN 
+      style="FONT-FAMILY: Arial"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 58.6pt" 
+    width=78>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.32E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0in; WIDTH: 51pt" 
+    width=68>
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">3.01E8<o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE></DIV>
+<P style="MARGIN: 0in 0in 0pt"><SPAN style="mso-bidi-font-family: Arial"><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN 
+style="FONT-FAMILY: Arial">Experimental Result<o:p></o:p></SPAN></I></B></P>
+<P>We experimented with four state-of-the-art placers, including: </P>
+<P class=MsoNormal 
+style="MARGIN: 0in 0in 6pt 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">Capo: Capo is built on 
+a multilevel framework with recursive bisection. It aims to enhance routability 
+with such techniques </SPAN>as tolerance computation and block splitting 
+heuristics [4]. The version used in our experiment is Capo v.8.5.<SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0in 0in 6pt 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">Dragon: Dragon uses 
+hMetis to derive an initial partition of the netlist. Then it uses simulated 
+annealing with bin-based swapping to further refine the result [5]. The version 
+used in the experiment is Dragon v.2.20.<o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0in 0in 6pt 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">mPL: </SPAN>mPL is a 
+multilevel placement algorithm. It uses nonlinear programming to handle the 
+non-overlapping constraints on the coarsest level, then uses Goto based 
+relaxation in subsequent refinement stages. The version used is mPL v.1.2. It 
+has an additional V cycle with distance-based clustering in the second V cycle 
+[6].<SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0in 0in 6pt 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">mPG: mPG is built on a 
+multilevel framework. It uses FC clustering and uses hierarchical density 
+control to minimize the overflow of each placement bin during the refinement 
+process. If necessary, it builds incremental A-tree to optimized routability. We 
+used mPG v.1.0 given in [7].<o:p></o:p></SPAN></P>
+<P>The experiments are performed on the following two machines:</P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l3 level1 lfo4"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Sun Blade workstation 750 MHz running SunOs 5.8 with 4GB 
+of memory. Experiments with Dragon, mPL, and mPG are performed on this machine. 
+</P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l3 level1 lfo4"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Pentium IV 2.2 GHz running Redhat 8.0 with 1.5GB of 
+memory. Experiment with Capo is performed on this machine.</P>
+<P>Table 3. gives the experimental results on G-PEKU. For these examples with 
+all global nets, the gap between their solutions and the upper bound varies 
+between 41% and 102% in the worst case, similar to the results obtained on PEKO, 
+which has local nets only. This is another validation that there is significant 
+room for improvement for the placement problem.</P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center">Table 3. Placement 
+results on G-PEKU</P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=3 
+style="MARGIN-LEFT: -40.7pt; mso-cellspacing: 2.0pt; mso-padding-alt: 0in 1.5pt 0in 1.5pt; mso-table-layout-alt: fixed">
+  <TBODY>
+  <TR style="HEIGHT: 44.6pt">
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">circuit<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">#cells<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">UB<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Dragon 
+      v.2.20 [5] QR<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">Capo 
+      v.8.5 [4] QR<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">mPG 
+      v.1.0 [7] QR<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 44.6pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">mPL 
+      v.1.2 [6] QR<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 12.25pt">
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">GPeku01</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">12506</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">7</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">.</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line">93</SPAN><SPAN 
+      style="LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">E5<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.98<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.56<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.91<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    vAlign=bottom width=72>
+      <P class=xl47 style="MARGIN: 0in 0in 4pt"><SPAN 
+      style="COLOR: black; FONT-FAMILY: 'Times New Roman'">1.11<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 12.25pt">
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">GPeku</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">05<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">28146</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.79E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.01<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.69<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.97<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    vAlign=bottom width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black">1.16<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 12.25pt">
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">GPeku</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">10<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">68685</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">4.38E6<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.02<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.72<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.98<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    vAlign=bottom width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black">1.41<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 12.25pt">
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">GPeku</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">15<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">161187<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.03E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.99<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.79<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.97<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">Abort<o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 12.25pt">
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.2pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line; mso-fareast-font-family: 'NJ Chinese Simplified'">GPeku</SPAN><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">18<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">210341<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.34E7<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">2.02<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.78<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 55.2pt" 
+    width=74>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="LAYOUT-GRID-MODE: line">1.98<o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="HEIGHT: 12.25pt; PADDING-BOTTOM: 0in; PADDING-LEFT: 1.5pt; PADDING-RIGHT: 1.5pt; PADDING-TOP: 0in; WIDTH: 54.25pt" 
+    width=72>
+      <P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN 
+      style="COLOR: black; LAYOUT-GRID-MODE: line">Abort<o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE></DIV>
+<P>Fig. 2 gives the experimental results on PEKU. For <SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">each </SPAN><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-hansi-font-family: SimSun; mso-ascii-font-family: SimSun; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN 
+style="mso-char-type: symbol; mso-symbol-font-family: Symbol">a</SPAN></SPAN><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">, we picked five of the 
+circuits and fed them into the placers. Each circuit was placed 5 times by the 
+placers. We calculated the QRs as the ratio of the wirelength to the upper 
+bound. Fig. 6 shows the change of the average QRs with the increase of 
+</SPAN><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-hansi-font-family: SimSun; mso-ascii-font-family: SimSun; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN 
+style="mso-char-type: symbol; mso-symbol-font-family: Symbol">a</SPAN></SPAN><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"> on PEKU for the four 
+placers. For mPL, its QR increases when </SPAN><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'; mso-hansi-font-family: SimSun; mso-ascii-font-family: SimSun; mso-char-type: symbol; mso-symbol-font-family: Symbol"><SPAN 
+style="mso-char-type: symbol; mso-symbol-font-family: Symbol">a</SPAN></SPAN><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"> is increased from 0 to 
+0.75%. For the other three placers, QRs are steadily decreasing. However, this 
+does not necessarily indicate that their solution qualities are improving. We 
+believe it is because the upper bounds of the optimal wirelength are becoming 
+looser as the percentage of non-local nets increases. The detailed spreadsheet 
+can be obtained <A 
+href="http://cadlab.cs.ucla.edu/~pubbench/PEKU/result/peku.xls">here</A>.<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center">Figure 2. <B><SPAN 
+style="mso-bidi-font-family: Tahoma; mso-fareast-language: EN-AU; mso-bidi-font-size: 9.0pt">. 
+</SPAN></B><SPAN 
+style="mso-bidi-font-family: Tahoma; mso-fareast-language: EN-AU; mso-bidi-font-size: 9.0pt">QR 
+vs % of non-local nets for four placement algorithms under evaluation</SPAN> 
+</P>
+<P align=center style="TEXT-ALIGN: center"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1027 style="HEIGHT: 192pt; WIDTH: 6in" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="" src = 
+"./peku_files/image003.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img border=0 width=576 height=256
+src="./peku_files/image004.jpg" v:shapes="_x0000_i1027"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1106747299">
+ </o:OLEObject>
+</xml><![endif]--></P>
+<P>The experiments suggest two things:</P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo7"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; mso-fareast-font-family: 'NJ Chinese Simplified'">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">The placers are not 
+stable in the presence of global nets. Without global nets, mPL gives the 
+shortest wirelength. However, its Quality Ratio shows an increase of more than 
+80% with a small increase of non-local nets. With non-local nets, 
+Dragon</SPAN><SPAN lang=ZH-CN 
+style="FONT-FAMILY: 'NJ Chinese Simplified'; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: SimSun">’</SPAN><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">s wirelength gradually 
+becomes the closest to the upper bound. A placer</SPAN><SPAN lang=ZH-CN 
+style="FONT-FAMILY: 'NJ Chinese Simplified'; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: SimSun">’</SPAN><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">s Quality Ratio can 
+vary significantly for designs of similar sizes but different characteristics. 
+<o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo7"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">The study suggests that 
+new hybrid techniques, which are more scalable and stable, may be needed for 
+future generations. </SPAN><o:p></o:p></P>
+<P><B><SPAN style="COLOR: red; FONT-SIZE: 13.5pt">Our experiment is not intended 
+to compare the four placers. Rather, it is for the optimality and stability 
+study to see how much room remains for improvement in placement algorithms. 
+Please do not interpret the results here as a ranking of the placers. 
+<o:p></o:p></SPAN></B></P>
+<P><B><SPAN style="COLOR: red; FONT-SIZE: 13.5pt">Achieving good results on PEKU 
+does not guarantee good performance on real circuits. Also, it is not encouraged 
+to tune the placer in order to beat these examples.<o:p></o:p></SPAN></B></P>
+<P><B><I><SPAN 
+style="FONT-FAMILY: Arial">Reference<o:p></o:p></SPAN></I></B></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><A 
+name=_Ref22982122><![if !supportLists]>1.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>C. C. 
+Chang, J. Cong, M. Xie, "Optimality and Scalability Study of Existing Placement 
+Algorithms," <I>Proc.</I> <I>Asia South-Pacific Design Automation 
+Conference,</I> pp. 621-627, 2003. </A></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><SPAN 
+style="mso-bookmark: _Ref22982122"><![if !supportLists]>2.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>C. J. 
+Alpert, "The ISPD98 Circuit Benchmark Suite," <EM>Proc. International Symposium 
+on Physical Design</EM>, pp. 85-90, 1998.</SPAN></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><SPAN 
+style="mso-bookmark: _Ref22982122"><![if !supportLists]>3.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">J. Cong, M. Romesis, M. 
+Xie, </SPAN></SPAN><SPAN style="mso-bookmark: _Ref22982122"><SPAN lang=ZH-CN 
+style="FONT-FAMILY: 'NJ Chinese Simplified'; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: SimSun">“</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref22982122"><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">Optimality, Scalability 
+and Stability Study of Partitioning &amp; Placement 
+Algorithms,</SPAN></SPAN><SPAN style="mso-bookmark: _Ref22982122"><SPAN 
+lang=ZH-CN 
+style="FONT-FAMILY: 'NJ Chinese Simplified'; mso-bidi-font-family: 'Times New Roman'; mso-hansi-font-family: SimSun">”</SPAN></SPAN><SPAN 
+style="mso-bookmark: _Ref22982122"><SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'"> To</SPAN> appear in 
+<I>Proc.</I> <I style="mso-bidi-font-style: normal">International Symposium on 
+Physical Design,</I> 2003.</SPAN></P><SPAN 
+style="mso-bookmark: _Ref22982122"></SPAN>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><A 
+name=_Ref22982140><![if !supportLists]>4.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>E. 
+Caldwell, A. B. Kahng and I. L. Markov, "Can Recursive Bisection Produce 
+Routable Placements?" <I>Proc. Design Automation Conference</I>, pp. 477-482, 
+2000.</A> </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><![if !supportLists]>5.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>M. Wang, 
+X. Yang and M. Sarrafzadeh, "Dragon2000: Standard-cell Placement Tool for Large 
+Industry Circuits," <I>Proc.</I> <I>International Conference on Computer-Aided 
+Design</I>, pp. 260-264, 2000. </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><A 
+name=_Ref22982160><![if !supportLists]>6.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>T. Chan, 
+J. Cong, T. Kong, and J. Shinnerl<EM><SPAN style="FONT-STYLE: normal">, 
+"Multilevel Optimization for Large-Scale Circuit Placement</SPAN></EM><I>,</I>" 
+<I>Proc.</I> <I>International Conference on Computer-Aided Design</I>, pp. 
+171-176, 2000.</A> </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo6"><![if !supportLists]>7.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>C-C<SPAN 
+style="mso-fareast-font-family: 'NJ Chinese Simplified'">.</SPAN> Chang, J. 
+Cong, Z<SPAN style="mso-fareast-font-family: 'NJ Chinese Simplified'">.</SPAN> 
+Pan, X<SPAN style="mso-fareast-font-family: 'NJ Chinese Simplified'">.</SPAN> 
+Yuan, <SPAN lang=ZH-CN>“</SPAN>Physical Hierarchy Generation with Routing 
+Congestion Control,<SPAN lang=ZH-CN>” </SPAN><I 
+style="mso-bidi-font-style: normal">Proc. International Symposium on Physical 
+Design,</I> pp. 36-41, 2002.</P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center">
+<HR align=center SIZE=3 width="100%">
+</DIV>
+<P><SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">　</SPAN>Please direct your 
+questions to <A href="mailto:xie@cs.ucla.edu">xie@cs.ucla.edu</A>. 
+Thanks.</P></DIV></BODY></HTML>

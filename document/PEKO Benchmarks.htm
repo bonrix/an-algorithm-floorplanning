@@ -1,0 +1,1545 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://ballade.cs.ucla.edu/~pubbench/placement/ -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:p = 
+"urn:schemas-microsoft-com:office:powerpoint"><HEAD><TITLE>PEKO Benchmarks</TITLE>
+<META content="text/html; charset=GB2312" http-equiv=Content-Type>
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 5.00.3502.5390" name=GENERATOR>
+<META content="Microsoft Word 9" name=Originator><LINK 
+href="./peko_files/filelist.xml" rel=File-List><LINK 
+href="./peko_files/editdata.mso" rel=Edit-Time-Data><LINK 
+href="./peko_files/oledata.mso" rel=OLE-Object-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: SimSun;
+}
+@font-face {
+	font-family: SimHei;
+}
+@font-face {
+	font-family: \@SimSun;
+}
+@font-face {
+	font-family: \@SimHei;
+}
+P.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+LI.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+DIV.MsoNormal {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+P.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt
+}
+LI.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt
+}
+DIV.MsoPlainText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; TEXT-ALIGN: justify; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt
+}
+P {
+	FONT-FAMILY: SimSun; FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; mso-pagination: widow-orphan; mso-bidi-font-family: "Times New Roman"; mso-fareast-language: ZH-CN; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+P.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+LI.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+DIV.References {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt 0.25in; TEXT-ALIGN: justify; TEXT-INDENT: -0.25in; TEXT-JUSTIFY: inter-ideograph; mso-pagination: none; mso-fareast-language: EN-US; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 1.0pt; mso-style-name: References; tab-stops: list .25in
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1052"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US link=blue style="tab-interval: .5in" vLink=purple>
+<DIV class=Section1>
+<P align=center style="TEXT-ALIGN: center"><B><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 18pt">P<A name=_Ref22982115></A>EKO 
+Suite<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><B><SPAN 
+style="FONT-FAMILY: Arial; FONT-SIZE: 18pt">( Placement Example with Known 
+Optimal wirelength )<o:p></o:p></SPAN></B></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="FONT-SIZE: 13.5pt">Director : </SPAN><A 
+href="http://cadlab.cs.ucla.edu/~cong"><SPAN style="FONT-SIZE: 13.5pt">Prof. 
+Jason Cong</SPAN></A></P>
+<P align=center style="MARGIN-LEFT: 1in; TEXT-ALIGN: center"><SPAN 
+style="FONT-SIZE: 13.5pt">Authors : Chin-Chih Chang and Min 
+Xie<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="COLOR: maroon; FONT-SIZE: 13.5pt">Copyright&copy; 2002-2003<I> the Regents of 
+University of California<o:p></o:p></I></SPAN></P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center">
+<HR align=center SIZE=3 width="100%">
+</DIV>
+<P class=MsoNormal><SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">　</SPAN><SPAN 
+style="FONT-FAMILY: SimHei"><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN 
+style="FONT-FAMILY: Arial">Motivation<o:p></o:p></SPAN></I></B></P>
+<P>Placement is an important step in the overall IC design process in DSM 
+technologies, as it defines the on-chip interconnects, which have become the 
+bottleneck in determining circuit performance. The development in placement 
+algorithms is slow but steady. Various algorithms have been proposed in the past 
+30 years,including min-cut methods, iterative methods, and analytical methods. 
+However, in terms of wirelength reduction, the rate of improvement is only 5-10% 
+every 2-3 years since the 1980s. This prompts us to think whether there remains 
+any room for improvement for circuit placement (at least in terms of wirelength 
+minimization). </P>
+<P>According to ITRS<SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">’</SPAN>01, the 
+maximum transistor number per chip will be over 1.6 billion, with a frequency of 
+28.7 GHz by the year 2016. Such design complexity will pose significant 
+challenge to existing placement algorithms. There is a need to quantify the 
+optimality and scalability of state-of-the-art placement engines.</P>
+<P class=MsoNormal>However, most existing works only compared with known 
+heuristics; they did not tell how close the solutions were to the optimal. The 
+study in [1] attempted to quantify the suboptimality of placement algorithms in 
+terms of chip area by <SPAN lang=ZH-CN>“</SPAN>stitching<SPAN 
+lang=ZH-CN>”</SPAN> small designs to form large designs. Although the circuits 
+in [1] did not have known optimal solutions, upper bounds of the optimal 
+solutions were derived and compared with the solutions given by several VLSI 
+heuristics.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN style="FONT-FAMILY: Arial">Circuit 
+Description<o:p></o:p></SPAN></I></B></P>
+<P>The PEKO suite is developed at <A href="http://cadlab.cs.ucla.edu/">UCLA VLSI 
+CAD LAB</A>. The placement examples are constructed such that their optimal 
+wirelengths are known. The module numbers and netlist profiles are extracted 
+from ISPD98 [2]. <SPAN style="mso-bidi-font-family: Arial">To mimic real designs 
+and to make the legalization process easier, we inserted 15% white space into 
+the examples by expanding one dimension of the chip. </SPAN>A detailed 
+description about the algorithm to generate these examples is given in [5]. We 
+generated four suites of PEKO examples, named from Suite1 to Suite4. The 
+examples are given in both GSRC BookShelf and LEF/DEF format and can be 
+downloaded <A 
+href="http://cadlab.cs.ucla.edu/~pubbench/placement/down_load.html">here</A>. 
+</P>
+<P>When generating Suite1, we remove all the connections to pads with the 
+concern that such connections may give hint about where to place each module. 
+Suite2 are generated by scaling the profiles by a factor of 10. Table 1 gives 
+the description of Suite1. </P>
+<P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: Arial">Table 1. Characteristics of Suite1 
+<o:p></o:p></SPAN></P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=1 
+style="BORDER-BOTTOM: gray 0.75pt outset; BORDER-LEFT: gray 0.75pt outset; BORDER-RIGHT: gray 0.75pt outset; BORDER-TOP: gray 0.75pt outset; WIDTH: 4.1in; mso-cellspacing: .6pt; mso-padding-alt: 0in 0in 0in 0in" 
+width=394>
+  <TBODY>
+  <TR style="HEIGHT: 27pt">
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">circuit</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    width="14%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#cell</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    width="14%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#net</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    width="9%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#row</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">row utilization</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 27pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">optimal wirelength</SPAN></P></TD></TR>
+  <TR style="HEIGHT: 0.15in">
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko01</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">13865</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">113</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 0.15in; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">8.14E+05</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko02</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">19342</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">19325</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">140</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.26E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko03</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">22853</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">27118</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">152</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.50E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko04</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">27220</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">31683</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">166</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.75E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko05</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">27777</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">169</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.91E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko06</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">32332</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">34660</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">181</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">2.06E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko07</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">45639</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">47830</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">215</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">2.88E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko08</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">51023</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">50227</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">227</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">3.14E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko09</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">53110</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">60617</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">231</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">3.64E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko10</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">74452</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">263</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">4.73E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko11</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">70152</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">81048</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">266</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">4.71E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko12</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">70439</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">76603</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">266</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">5.00E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko13</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">83709</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">99176</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">290</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">5.87E+06</SPAN></P></TD></TR>
+  <TR style="HEIGHT: 7.8pt">
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko14</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">147088</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">152255</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">385</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">9.01E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko15</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186225</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">402</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.15E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko16</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">182980</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">189544</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">429</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.25E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko17</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">184752</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">188838</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">431</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.34E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15.24%" 
+    vAlign=top width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko18</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14.44%" 
+    vAlign=top width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201648</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 9.76%" 
+    vAlign=top width="9%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 23.38%" 
+    vAlign=top width="23%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 21.34%" 
+    vAlign=top width="21%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.32E+07</SPAN></P></TD></TR></TBODY></TABLE></DIV>
+<P>Using similar methods, we generated two suites that allow connections to pads 
+and name them Suite3 and Suite4 respectively. Suite4 is generated by scaling the 
+profiles by a factor of 10. Fixed modules are used in these examples to emulated 
+pads. Table 2 gives the description of Suite3.</P>
+<P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: Arial">Table 2. Characteristics of 
+Suite3<o:p></o:p></SPAN></P>
+<DIV align=center>
+<TABLE border=1 cellPadding=0 cellSpacing=1 
+style="BORDER-BOTTOM: gray 0.75pt outset; BORDER-LEFT: gray 0.75pt outset; BORDER-RIGHT: gray 0.75pt outset; BORDER-TOP: gray 0.75pt outset; WIDTH: 4.1in; mso-cellspacing: .6pt; mso-padding-alt: 0in 0in 0in 0in" 
+width=394>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">circuit</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#cell</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#net</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">#row</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    vAlign=top width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Row utilization</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    vAlign=top width="20%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">optimal wirelength</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko01</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">12506</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">14111</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">113</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">8.22E+05</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko02</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">19342</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">19584</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">140</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.27E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko03</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">22853</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">27401</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">152</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.51E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko04</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">27220</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">31970</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">166</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.76E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko05</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28146</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">28446</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">169</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.95E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko06</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">32332</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">34826</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">181</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">2.07E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko07</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">45639</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">48117</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">215</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">2.89E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko08</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">51023</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">50513</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">227</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">3.15E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko09</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">53110</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">60902</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">231</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">3.65E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko10</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">68685</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">75196</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">263</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">4.75E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko11</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">70152</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">81454</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">266</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">4.72E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko12</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">70439</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">77240</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">266</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">5.02E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko13</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">83709</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">99666</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">290</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">5.89E+06</SPAN></P></TD></TR>
+  <TR style="HEIGHT: 7.8pt">
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko14</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">147088</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">152772</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">385</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; HEIGHT: 7.8pt; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">9.03E+06</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko15</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">161187</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">186608</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">402</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.16E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko16</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">182980</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">190048</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">429</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.25E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko17</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">184750</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">189581</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">431</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.35E+07</SPAN></P></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 18%" 
+    width="18%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">Peko18</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 14%" 
+    width="14%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">210341</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">201920</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 15%" 
+    width="15%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">460</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 19%" 
+    width="19%">
+      <P align=center style="TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: SimHei">85%</SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: gray 0.75pt inset; BORDER-LEFT: gray 0.75pt inset; BORDER-RIGHT: gray 0.75pt inset; BORDER-TOP: gray 0.75pt inset; PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt; WIDTH: 20%" 
+    width="20%">
+      <P align=center style="MARGIN: 0in 0in 0pt; TEXT-ALIGN: center"><SPAN 
+      style="FONT-FAMILY: Arial">1.32E+07</SPAN></P></TD></TR></TBODY></TABLE></DIV>
+<P style="MARGIN: 0in 0in 0pt"><SPAN style="mso-bidi-font-family: Arial"><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></SPAN></P>
+<P style="MARGIN: 0in 0in 0pt"><B><I><SPAN 
+style="FONT-FAMILY: Arial">Experimental Result<o:p></o:p></SPAN></I></B></P>
+<P>We experimented with four state-of-the-art placers, including: </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Dragon. Dragon is based on a multilevel framework. It 
+uses hMetis to derive an initial partition result on the circuits, then 
+undergoes a series of refinement stages doing bin-based swapping with simulated 
+annealing [3]. We used Dragon v.2.20.</P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Capo. Capo is built on a multilevel partitioner. It aims 
+to enhance the routability with such techniques as tolerance computation and 
+block splitting heuristics [4]. We used Capo v.8.0. </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>mPL. mPL is also based on a multilevel framework.It uses 
+non-linear programming to handle the non-overlapping constraints on the coarsest 
+level, and uses Goto based relaxation in subsequent refinement stages. We used 
+mPL v.1.2. Compared with mPL v.1.0, mPL v.1.2 uses an additional V cycle and 
+adopts distance based clustering in the second V cycle [5].</P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l2 level1 lfo2"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>QPlace. QPlace is the placement engine used in Silicon 
+Ensemble v.5.3 of Cadence Inc. The version we used is QPlace v.5.1.55.</P>
+<P>We set an upper limit of 24 hours to the runtime of a placer. Processes 
+running over 24 hours will be terminated. The experiments are performed on the 
+following two machines:</P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo4"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Sun Blade workstation 750 MHz running SunOs 5.8 with 4GB 
+of memory. Experiments with Dragon and mPL are performed on this machine. </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l1 level1 lfo4"><![if !supportLists]><SPAN 
+style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><![endif]>Pentium IV 1.4 GHz running Windows 2000 with 2GB of 
+memory. Experiment with Capo is performed on this machine.</P>
+<P>We were given the latest version of Capo v.8.5 for Linux and experimented on 
+a Pentium IV 2.2GHz running Redhat v.8.0. The results are included in the two 
+spreadsheets below.</P>
+<P>Fig. 1. and Fig. 2. gives the experimental results. Here are the spreadsheets 
+of the experimental data with <A 
+href="http://ballade.cs.ucla.edu/~pubbench/placement/result/suite1.xls">Suite1 
+</A>and <A 
+href="http://ballade.cs.ucla.edu/~pubbench/placement/result/suite2.xls">Suite2</A>.</P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: SimHei">Figure 1. Solution Quality vs Cell Number 
+<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center"><!--[if gte vml 1]><v:shapetype 
+id=_x0000_t75 coordsize = "21600,21600" o:preferrelative = "t" filled = "f" 
+stroked = "f" path = "m@4@5l@4@11@9@11@9@5xe" o:spt = "75"><v:stroke joinstyle = 
+"miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock v:ext="edit" 
+aspectratio = "t"></o:lock></v:shapetype><v:shape id=_x0000_i1030 
+style="HEIGHT: 204.75pt; WIDTH: 308.25pt" o:ole="" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="" src = 
+"./peko_files/image001.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img border=0 width=411 height=273
+src="./peko_files/image002.jpg" v:shapes="_x0000_i1030"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1106064105">
+ </o:OLEObject>
+</xml><![endif]--></P>
+<P align=center style="TEXT-ALIGN: center"><SPAN 
+style="FONT-FAMILY: SimHei">Figure 2. Runtime vs Cell 
+Number<o:p></o:p></SPAN></P>
+<P align=center style="TEXT-ALIGN: center"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1038 style="HEIGHT: 204pt; WIDTH: 306pt" o:ole="" type = 
+"#_x0000_t75" coordsize = "21600,21600"><v:imagedata o:title="" src = 
+"./peko_files/image003.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img border=0 width=408 height=272
+src="./peko_files/image004.jpg" v:shapes="_x0000_i1038"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1106064107">
+ </o:OLEObject>
+</xml><![endif]--></P>
+<P class=MsoPlainText><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt">The 
+experimental results indicate that the wirelengths produced by these tools are 
+1.66 to 2.53 times the optimal in the worst cases, and are </SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'">1.</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt">46</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'"> 
+to 2.</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt">38</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'"> 
+times the optimal</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt"> 
+on the average. </SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'">As 
+for scalability, the </SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt">average 
+</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'">solution 
+quality of </SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt">each 
+tool shows deterioration by an additional 4% to 25% when the problem size 
+increases by a factor of 10</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'">.</SPAN><SPAN 
+style="FONT-FAMILY: SimSun; FONT-SIZE: 12pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt"> 
+<B style="mso-bidi-font-weight: normal"><o:p></o:p></B></SPAN></P>
+<P><B><SPAN style="COLOR: red; FONT-SIZE: 13.5pt">Our experiment is not intended 
+to compare the four placers. Rather, it is for a gap analysis to see how much 
+room remains for improvement in placement algorithms. Please do not interpret 
+the results here as a ranking of the placers. <o:p></o:p></SPAN></B></P>
+<P><B><SPAN style="COLOR: red; FONT-SIZE: 13.5pt">PEKO has obvious limitations: 
+all the nets in the optimal solutions are local nets, i.e., they only connect 
+cells in contiguous areas, which may not be true on real circuits. Therefore, 
+achieving good results on PEKO does not guarantee good performance on real 
+circuits. Also, it is not encouraged to tune the placer in order to beat these 
+examples.<o:p></o:p></SPAN></B></P>
+<P><SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">　</SPAN><B><I><SPAN 
+style="FONT-FAMILY: Arial">Reference<o:p></o:p></SPAN></I></B></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><A 
+name=_Ref22982122><![if !supportLists]>1.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>L. W. 
+Hagen, D. J. Huang and A. B. Kahng, <SPAN lang=ZH-CN>“</SPAN>Quantified 
+Suboptimality of VLSI Layout Heuristics,<SPAN lang=ZH-CN>” </SPAN><I 
+style="mso-bidi-font-style: normal">Proc. Design Automation Conference</I>, pp. 
+216-221, 1995.</A></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><SPAN 
+style="mso-bookmark: _Ref22982122"><![if !supportLists]>2.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>C. J. 
+Alpert, "The ISPD98 Circuit Benchmark Suite," <EM>Proc. International Symposium 
+on Physical Design</EM>, pp. 85-90, 1998. </SPAN></P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><SPAN 
+style="mso-bookmark: _Ref22982122"><![if !supportLists]>3.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>M. Wang, 
+X. Yang and M. Sarrafzadeh, "Dragon2000: Standard-cell Placement Tool for Large 
+Industry Circuits," <I>Proc.</I> <I>International Conference on Computer-Aided 
+Design</I>, pp. 260-264, 2000.</SPAN> </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><A 
+name=_Ref22982140><![if !supportLists]>4.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>E. 
+Caldwell, A. B. Kahng and I. L. Markov. "Can Recursive Bisection Produce 
+Routable Placements?" <I>Proc. Design Automation Conference</I>, pp. 477-482, 
+2000.</A> </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><A 
+name=_Ref22982160><![if !supportLists]>5.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>T. Chan, 
+J. Cong, T. Kong, and J. Shinnerl<EM>, "Multilevel Optimization for Large-Scale 
+Circuit Placement</EM><I>,</I>" <I>Proc.</I> <I>International Conference on 
+Computer-Aided Design</I>, pp. 171-176, 2000.</A> </P>
+<P 
+style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; tab-stops: list .5in; mso-list: l0 level1 lfo6"><![if !supportLists]>6.<SPAN 
+style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp; </SPAN><![endif]>C. C. 
+Chang, J. Cong, M. Xie, "Optimality and Scalability Study of Existing Placement 
+Algorithms," To appear in <I>Proc.</I> <I>Asia South-Pacific Design Automation 
+Conference,</I> 2003. </P>
+<DIV align=center class=MsoNormal style="TEXT-ALIGN: center">
+<HR align=center SIZE=3 width="100%">
+</DIV>
+<P><SPAN lang=ZH-CN style="FONT-FAMILY: SimHei">　</SPAN>Please direct your 
+questions to <A href="mailto:xie@cs.ucla.edu">xie@cs.ucla.edu</A>. 
+Thanks.</P></DIV></BODY></HTML>
